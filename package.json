@@ -5,7 +5,8 @@
     "main": "book.js",
     "scripts": {
         "deploy": "git subtree push --prefix=_book origin gh-pages",
-        "push":"git add . && git commit -m update && git push origin master && npm run deploy",
+        "push":
+            "gitbook build && git add . && git commit -m update && git push origin master && npm run deploy",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
