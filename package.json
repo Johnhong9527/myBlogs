@@ -4,6 +4,7 @@
   "description": "",
   "main": "book.js",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "gitbook-plugin-fontsettings": "2.0.0",
     "gitbook-plugin-highlight": "2.0.2",
     "gitbook-plugin-livereload": "0.0.1",
@@ -15,6 +16,9 @@
   },
   "devDependencies": {},
   "scripts": {
+    "dev": "gitbook serve ./docs ./gh-pages",
+    "build": "gitbook build ./docs ./gh-pages",
+    "deploy": "node ./bin/deploy-gh-pages.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

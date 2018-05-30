@@ -1,0 +1,1139 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>instanceof运算符 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06.html" />
+    
+    
+    <link rel="prev" href="04.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    关于本文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    原理解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="0_data_type.html">
+            
+                <a href="0_data_type.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="001_object.html">
+            
+                <a href="001_object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="002_DOM.html">
+            
+                <a href="002_DOM.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    HTML DOM Document 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    写给初级JS程序员的JavaScript闭包(译)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    匿名函数和闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.8" data-path="05.html">
+            
+                <a href="05.html">
+            
+                    
+                    instanceof运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="06.html">
+            
+                <a href="06.html">
+            
+                    
+                    JavaScript事件流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../cases/">
+            
+                <a href="../cases/">
+            
+                    
+                    案例解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../cases/0.html">
+            
+                <a href="../cases/0.html">
+            
+                    
+                    动态替换图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../cases/01.html">
+            
+                <a href="../cases/01.html">
+            
+                    
+                    原生Ajax学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../cases/02.html">
+            
+                <a href="../cases/02.html">
+            
+                    
+                    React/React Native 的ES5 ES6写法对照表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../cases/03.html">
+            
+                <a href="../cases/03.html">
+            
+                    
+                    战舰游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../cases/04.html">
+            
+                <a href="../cases/04.html">
+            
+                    
+                    正则截取指定字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../cases/05.html">
+            
+                <a href="../cases/05.html">
+            
+                    
+                    常用功能收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">angular</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../angular/study_notes/">
+            
+                <a href="../../angular/study_notes/">
+            
+                    
+                    Study notes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../angular/study_notes/0_depend.html">
+            
+                <a href="../../angular/study_notes/0_depend.html">
+            
+                    
+                    项目依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../angular/study_notes/01_built-in_instructions.html">
+            
+                <a href="../../angular/study_notes/01_built-in_instructions.html">
+            
+                    
+                    内置指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../angular/study_notes/from/">
+            
+                <a href="../../angular/study_notes/from/">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../angular/study_notes/from/0_template_case.html">
+            
+                <a href="../../angular/study_notes/from/0_template_case.html">
+            
+                    
+                    模板案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../angular/study_notes/from/01_formControl.html">
+            
+                <a href="../../angular/study_notes/from/01_formControl.html">
+            
+                    
+                    formControl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../angular/study_notes/from/02_directives.html">
+            
+                <a href="../../angular/study_notes/from/02_directives.html">
+            
+                    
+                    directives_源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../angular/study_notes/from/03_ng_model.html">
+            
+                <a href="../../angular/study_notes/from/03_ng_model.html">
+            
+                    
+                    ngModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../../angular/study_notes/from/04_Form-Validation_&_Custom-Validator.html">
+            
+                <a href="../../angular/study_notes/from/04_Form-Validation_&_Custom-Validator.html">
+            
+                    
+                    表单验证&自定义验证器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.6" data-path="../../angular/study_notes/from/05_Listen_to_form_data_changes.html">
+            
+                <a href="../../angular/study_notes/from/05_Listen_to_form_data_changes.html">
+            
+                    
+                    监听表单数据变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.7" data-path="../../angular/study_notes/from/06_Problem_collection.html">
+            
+                <a href="../../angular/study_notes/from/06_Problem_collection.html">
+            
+                    
+                    问题收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../angular/ng.html">
+            
+                <a href="../../angular/ng.html">
+            
+                    
+                    ng
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">css</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../css/principle/">
+            
+                <a href="../../css/principle/">
+            
+                    
+                    原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../css/cases/">
+            
+                <a href="../../css/cases/">
+            
+                    
+                    案例收集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../css/cases/0_.html">
+            
+                <a href="../../css/cases/0_.html">
+            
+                    
+                    去除表格单元格边距
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../css/cases/01_.html">
+            
+                <a href="../../css/cases/01_.html">
+            
+                    
+                    媒体查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../../css/cases/02_.html">
+            
+                <a href="../../css/cases/02_.html">
+            
+                    
+                    flex布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">vue</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../vue/components/">
+            
+                <a href="../../vue/components/">
+            
+                    
+                    components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../vue/components/props.html">
+            
+                <a href="../../vue/components/props.html">
+            
+                    
+                    组件传值_props
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../vue/router/">
+            
+                <a href="../../vue/router/">
+            
+                    
+                    router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../vue/router/lazy_loading.html">
+            
+                <a href="../../vue/router/lazy_loading.html">
+            
+                    
+                    路由懒加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../vue/vuex/">
+            
+                <a href="../../vue/vuex/">
+            
+                    
+                    VUE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ubuntu</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../ubuntu/serves/">
+            
+                <a href="../../ubuntu/serves/">
+            
+                    
+                    服务器生存指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../ubuntu/serves/0_ftp.html">
+            
+                <a href="../../ubuntu/serves/0_ftp.html">
+            
+                    
+                    ftp 之路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../../ubuntu/serves/01_nginx/1_nginx.html">
+            
+                <a href="../../ubuntu/serves/01_nginx/1_nginx.html">
+            
+                    
+                    nginx 安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.2.1" data-path="../../ubuntu/serves/01_nginx/2_instruction.html">
+            
+                <a href="../../ubuntu/serves/01_nginx/2_instruction.html">
+            
+                    
+                    指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../../ubuntu/serves/02_mysql/1_mysql.html">
+            
+                <a href="../../ubuntu/serves/02_mysql/1_mysql.html">
+            
+                    
+                    mysql 安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.3.1" data-path="../../ubuntu/serves/02_mysql/2_instruction.html">
+            
+                <a href="../../ubuntu/serves/02_mysql/2_instruction.html">
+            
+                    
+                    指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../../ubuntu/serves/3_WordPress.html">
+            
+                <a href="../../ubuntu/serves/3_WordPress.html">
+            
+                    
+                    WordPress 之路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../../ubuntu/serves/4_GRUN.html">
+            
+                <a href="../../ubuntu/serves/4_GRUN.html">
+            
+                    
+                    GRUN 之路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../../ubuntu/serves/5_L2TP_Client.html">
+            
+                <a href="../../ubuntu/serves/5_L2TP_Client.html">
+            
+                    
+                    L2TP Client 之路
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../ubuntu/instruction.html">
+            
+                <a href="../../ubuntu/instruction.html">
+            
+                    
+                    常用指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GIT</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../git/git.html">
+            
+                <a href="../../git/git.html">
+            
+                    
+                    git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../other/faq.html">
+            
+                <a href="../../other/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../../other/examples.html">
+            
+                <a href="../../other/examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >instanceof运算符</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+
+                                <h1 id="instanceof&#x8FD0;&#x7B97;&#x7B26;">instanceof&#x8FD0;&#x7B97;&#x7B26;</h1>
+<h4 id="&#x539F;&#x6587;"><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof" target="_blank">&#x539F;&#x6587;</a></h4>
+<hr>
+<h2 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h2>
+<pre><code>object instanceof constructor
+</code></pre><blockquote>
+<p>&#x53C2;&#x6570;<br></p>
+<ol>
+<li>object &#x8981;&#x68C0;&#x6D4B;&#x7684;&#x5BF9;&#x8C61;.<br></li>
+<li>constructor  &#x67D0;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;</li>
+</ol>
+</blockquote>
+<h2 id="&#x63CF;&#x8FF0;">&#x63CF;&#x8FF0;</h2>
+<blockquote>
+<p>instanceof &#x8FD0;&#x7B97;&#x7B26;&#x7528;&#x6765;&#x68C0;&#x6D4B; constructor.prototype &#x662F;&#x5426;&#x5B58;&#x5728;&#x4E8E;&#x53C2;&#x6570; object &#x7684;&#x539F;&#x578B;&#x94FE;&#x4E0A;&#x3002;</p>
+</blockquote>
+<pre><code>// &#x5B9A;&#x4E49;&#x6784;&#x9020;&#x51FD;&#x6570;
+function C(){}
+function D(){}
+
+var o = new C();
+
+// true&#xFF0C;&#x56E0;&#x4E3A; Object.getPrototypeOf(o) === C.prototype
+o instanceof C;
+
+// false&#xFF0C;&#x56E0;&#x4E3A; D.prototype&#x4E0D;&#x5728;o&#x7684;&#x539F;&#x578B;&#x94FE;&#x4E0A;
+o instanceof D;
+
+o instanceof Object; // true,&#x56E0;&#x4E3A;Object.prototype.isPrototypeOf(o)&#x8FD4;&#x56DE;true
+C.prototype instanceof Object // true,&#x540C;&#x4E0A;
+
+C.prototype = {};
+var o2 = new C();
+
+o2 instanceof C; // true
+
+o instanceof C; // false,C.prototype&#x6307;&#x5411;&#x4E86;&#x4E00;&#x4E2A;&#x7A7A;&#x5BF9;&#x8C61;,&#x8FD9;&#x4E2A;&#x7A7A;&#x5BF9;&#x8C61;&#x4E0D;&#x5728;o&#x7684;&#x539F;&#x578B;&#x94FE;&#x4E0A;.
+
+D.prototype = new C(); // &#x7EE7;&#x627F;
+var o3 = new D();
+o3 instanceof D; // true
+o3 instanceof C; // true
+</code></pre><blockquote>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F; obj instanceof Foo &#x8FD4;&#x56DE;true&#xFF0C;&#x5219;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x7740;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x4F1A;&#x6C38;&#x8FDC;&#x8FD4;&#x56DE;true&#xFF0C;&#x56E0;&#x4E3A;Foo.prototype&#x5C5E;&#x6027;&#x7684;&#x503C;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;&#x6539;&#x53D8;&#x4E4B;&#x540E;&#x7684;&#x503C;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x4E0D;&#x5B58;&#x5728;&#x4E8E;obj&#x7684;&#x539F;&#x578B;&#x94FE;&#x4E0A;&#xFF0C;&#x8FD9;&#x65F6;&#x539F;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x5C31;&#x4F1A;&#x6210;&#x4E3A;false&#x3002;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x539F;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4E5F;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;&#x5C31;&#x662F;&#x6539;&#x53D8;&#x5BF9;&#x8C61;obj&#x7684;&#x539F;&#x578B;&#x94FE;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x867D;&#x7136;&#x5728;&#x76EE;&#x524D;&#x7684;ES&#x89C4;&#x8303;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x80FD;&#x8BFB;&#x53D6;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x800C;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x5B83;&#xFF0C;&#x4F46;&#x501F;&#x52A9;&#x4E8E;&#x975E;&#x6807;&#x51C6;&#x7684;<strong>proto</strong>&#x9B54;&#x6CD5;&#x5C5E;&#x6027;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x6BD4;&#x5982;&#x6267;&#x884C;obj.<strong>proto</strong> = {}&#x4E4B;&#x540E;&#xFF0C;obj instanceof Foo&#x5C31;&#x4F1A;&#x8FD4;&#x56DE;false&#x4E86;&#x3002;</p>
+</blockquote>
+<p>instanceof&#x548C;&#x591A;&#x5168;&#x5C40;&#x5BF9;&#x8C61;(&#x591A;&#x4E2A;frame&#x6216;&#x591A;&#x4E2A;window&#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x4E92;)</p>
+<blockquote>
+<p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x811A;&#x672C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5728;&#x591A;&#x4E2A;&#x7A97;&#x53E3;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;&#x591A;&#x4E2A;&#x7A97;&#x53E3;&#x610F;&#x5473;&#x7740;&#x591A;&#x4E2A;&#x5168;&#x5C40;&#x73AF;&#x5883;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x5168;&#x5C40;&#x73AF;&#x5883;&#x62E5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;&#x800C;&#x62E5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x53D1;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F; [] instanceof window.frames[0].Array &#x4F1A;&#x8FD4;&#x56DE;false&#xFF0C;&#x56E0;&#x4E3A; Array.prototype !== window.frames[0].Array.prototype&#xFF0C;&#x56E0;&#x6B64;&#x4F60;&#x5FC5;&#x987B;&#x4F7F;&#x7528; Array.isArray(myObj) &#x6216;&#x8005; Object.prototype.toString.call(myObj) === &quot;[object Array]&quot;&#x6765;&#x5224;&#x65AD;myObj&#x662F;&#x5426;&#x662F;&#x6570;&#x7EC4;&#x3002;</p>
+</blockquote>
+<h2 id="&#x4F8B;&#x5B50;">&#x4F8B;&#x5B50;</h2>
+<p>&#x4F8B;&#x5B50;: &#x8868;&#x660E;String&#x5BF9;&#x8C61;&#x548C;Date&#x5BF9;&#x8C61;&#x90FD;&#x5C5E;&#x4E8E;Object&#x7C7B;&#x578B;</p>
+<blockquote>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x4E86;instanceof&#x6765;&#x8BC1;&#x660E;&#xFF1A;String&#x548C;Date&#x5BF9;&#x8C61;&#x540C;&#x65F6;&#x4E5F;&#x5C5E;&#x4E8E;Object&#x7C7B;&#x578B;&#x3002;</p>
+</blockquote>
+<pre><code>var simpleStr = &quot;This is a simple string&quot;;
+var myString  = new String();
+var newStr    = new String(&quot;String created with constructor&quot;);
+var myDate    = new Date();
+var myObj     = {};
+
+simpleStr instanceof String; // returns false, &#x68C0;&#x67E5;&#x539F;&#x578B;&#x94FE;&#x4F1A;&#x627E;&#x5230; undefined
+myString  instanceof String; // returns true
+newStr    instanceof String; // returns true
+myString  instanceof Object; // returns true
+
+myObj instanceof Object;    // returns true, despite an undefined prototype
+({})  instanceof Object;    // returns true, &#x540C;&#x4E0A;
+
+myString instanceof Date;   // returns false
+
+myDate instanceof Date;     // returns true
+myDate instanceof Object;   // returns true
+myDate instanceof String;   // returns false
+</code></pre><p>&#x6F14;&#x793A;mycar&#x5C5E;&#x4E8E;Car&#x7C7B;&#x578B;&#x7684;&#x540C;&#x65F6;&#x53C8;&#x5C5E;&#x4E8E;Object&#x7C7B;&#x578B;</p>
+<blockquote>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;Car&#xFF0C;&#x4EE5;&#x53CA;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;mycar. instanceof&#x8FD0;&#x7B97;&#x7B26;&#x8868;&#x660E;&#x4E86;&#x8FD9;&#x4E2A;mycar&#x5BF9;&#x8C61;&#x65E2;&#x5C5E;&#x4E8E;Car&#x7C7B;&#x578B;&#xFF0C;&#x53C8;&#x5C5E;&#x4E8E;Object&#x7C7B;&#x578B;&#x3002;</p>
+</blockquote>
+<pre><code>function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+var mycar = new Car(&quot;Honda&quot;, &quot;Accord&quot;, 1998);
+var a = mycar instanceof Car;    // &#x8FD4;&#x56DE; true
+var b = mycar instanceof Object; // &#x8FD4;&#x56DE; true
+</code></pre><h3 id="instanceof&#x8FD0;&#x7B97;&#x7B26;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x4F7F;&#x7528;">instanceof&#x8FD0;&#x7B97;&#x7B26;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x4F7F;&#x7528;</h3>
+<p>&#x786E;&#x5B9A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5728;&#x5168;&#x5C40;&#x4E2D;&#x662F;&#x5426;&#x4E3A;&#x6570;&#x7EC4;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> colors=[<span class="hljs-string">&apos;aa&apos;</span>,<span class="hljs-string">&apos;bb&apos;</span>,<span class="hljs-string">&apos;cc&apos;</span>];<span class="hljs-comment">//&#x521B;&#x5EFA;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6570;&#x7EC4;</span>
+<span class="hljs-keyword">if</span> (colors <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span>){
+  alert(<span class="hljs-number">1</span>)
+}<span class="hljs-keyword">else</span> {
+  alert(<span class="hljs-number">0</span>)
+}
+<span class="hljs-comment">//&#x6700;&#x540E;&#x8F93;&#x51FA; 1&#xFF0C;&#x8BF4;&#x660E;&#x8BE5;&#x5BF9;&#x8C61;&#x4E3A;&#x6570;&#x7EC4;</span>
+</code></pre>
+
+                                
+<hr>
+<div class="btn-group btn-group-justified">
+    
+    <a class="btn" href="04.html"><b>上一页:</b> 匿名函数和闭包</a>
+    
+    
+    <a class="btn" href="06.html"><b>下一页:</b> JavaScript事件流</a>
+    
+</div>
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04.html" class="navigation navigation-prev " aria-label="Previous page: 匿名函数和闭包">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06.html" class="navigation navigation-next " aria-label="Next page: JavaScript事件流">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"instanceof运算符","level":"2.1.8","depth":2,"next":{"title":"JavaScript事件流","level":"2.1.9","depth":2,"path":"JavaScript/principle/06.md","ref":"JavaScript/principle/06.md","articles":[]},"previous":{"title":"匿名函数和闭包","level":"2.1.7","depth":2,"path":"JavaScript/principle/04.md","ref":"JavaScript/principle/04.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"JavaScript/principle/05.md","mtime":"2018-05-30T07:41:36.356Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-30T07:54:38.579Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

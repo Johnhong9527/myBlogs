@@ -2,7 +2,7 @@ var pkg = require("./package.json");
 
 module.exports = {
     // Documentation for GitBook is stored under "docs"
-    root: "./doc/",
+    root: "./docs/",
     title: "代码收集",
 
     // Enforce use of GitBook v3
