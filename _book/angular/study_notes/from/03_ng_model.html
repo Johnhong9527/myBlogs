@@ -1,0 +1,895 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ngModel · 代码收集</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    <link rel="next" href="04_Form-Validation_&_Custom-Validator.html" />
+    
+    
+    <link rel="prev" href="02_directives.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+            <a href="../../.." class="logo">
+                <img src="../../../gitbook/images/logo/128.png">
+                <h1>代码收集</h1>
+            </a>
+
+            
+
+            
+<a href="https://github.com/seamong/myBlogs/blob/master/doc/angular/study_notes/from/03_ng_model.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    <i class="octicon octicon-mark-github"></i> 在GitHub编辑本页
+</a>
+<a href="../../../faq.md" class="btn btn-link pull-right hidden-xs">
+    F.A.Q
+</a>
+<a href="https://github.com/seamong/myBlogs/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    0.0.1
+</a>
+
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">介绍</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            Introduction
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            关于本文档
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">JavaScript</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../JavaScript/principle/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            原理解析
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../JavaScript/cases/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            案例解析
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">angular</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            Study notes
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="../0_depend.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            项目依赖
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../01_built-in_instructions.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            内置指令
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="./" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            表单
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="0_template_case.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            模板案例
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="01_formControl.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            formControl
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="02_directives.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            directives_源码解析
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="03_ng_model.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            ngModel
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="04_Form-Validation_&_Custom-Validator.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            表单验证&自定义验证器
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="05_Listen_to_form_data_changes.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            监听表单数据变化
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="06_Problem_collection.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            问题收集
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+
+        
+    
+        
+        <a href="../../ng.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            ng
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">css</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../css/principle/" class="list-group-item ">
+        
+
+            
+
+            
+
+            原理解析
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../css/cases/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            案例收集
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">vue</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../vue/components/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            components
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../vue/router/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            router
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../vue/vuex/" class="list-group-item ">
+        
+
+            
+
+            
+
+            VUE
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">ubuntu</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../ubuntu/serves/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            服务器生存指南
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../ubuntu/instruction.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            常用指令
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">GIT</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../git/git.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            git 命令
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../other/faq.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            FAQ
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../other/examples.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            Examples
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+
+                            <div class="gb-markdown book-page-inner">
+                                <h3 id="&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x6570;&#x636E;&#x5199;&#x6CD5;&#x8BF4;&#x660E;">&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x6570;&#x636E;&#x5199;&#x6CD5;&#x8BF4;&#x660E;</h3>
+<blockquote>
+<p>&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x6570;&#x636E;&#x7684;&#x5199;&#x6CD5;&#x662F;[(ngModel)]=&quot;modelName&quot;.modelName&#x547D;&#x540D;&#x5FC5;&#x987B;&#x4E3A;&#x6709;&#x610F;&#x4E49;,&#x5982;:productName
+&#x4F7F;&#x7528;: </p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> [(<span class="hljs-attr">ngModel</span>)]=<span class="hljs-string">&quot;productName&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+</code></pre>
+<p>&#x73AF;&#x5883;:</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// &#x5FC5;&#x987B;&#x5728;&#x6839;&#x6A21;&#x5757;&#x5BFC;&#x5165; FormsModule &#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; ngModel</span>
+<span class="hljs-keyword">import</span> {FormsModule} from <span class="hljs-string">&apos;@angular/forms&apos;</span>;
+@NgModule({
+  <span class="hljs-comment">// ...</span>
+  imports: [
+    <span class="hljs-comment">// ...</span>
+    FormsModule
+    <span class="hljs-comment">// ...</span>
+  ]
+  <span class="hljs-comment">//...</span>
+})
+</code></pre>
+</blockquote>
+<h3 id="&#x8BBE;&#x7F6E;appmodulets">&#x8BBE;&#x7F6E;app.module.ts</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// &#x4E0B;&#x9762;&#x662F;&#x5F15;&#x5165;&#x5F00;&#x53D1;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x5E93;(&#x6A21;&#x677F;&#x4ED3;&#x5E93;)</span>
+<span class="hljs-keyword">import</span> {BrowserModule} from <span class="hljs-string">&apos;@angular/platform-browser&apos;</span>;
+<span class="hljs-keyword">import</span> {NgModule} from <span class="hljs-string">&apos;@angular/core&apos;</span>;
+<span class="hljs-keyword">import</span> {FormsModule,ReactiveFormsModule} from <span class="hljs-string">&apos;@angular/forms&apos;</span>;
+<span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x5F15;&#x5165;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;:</span>
+<span class="hljs-comment">// import { NgModelComponent } from &apos;./ng-model/ng-model.component&apos;;</span>
+@NgModule({
+  declarations: [
+    <span class="hljs-comment">// ...  &#x8FD9;&#x91CC;&#x662F;&#x5F15;&#x5165;&#x7EC4;&#x4EF6;</span>
+    <span class="hljs-comment">// NgModelComponent</span>
+  ],
+  <span class="hljs-comment">// &#x5BFC;&#x5165;&#x5E93;</span>
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x7EC4;&#x4EF6;">&#x521B;&#x5EFA;&#x7EC4;&#x4EF6;</h3>
+<pre><code class="lang-bash">$ ng generate component ngModel
+  <span class="hljs-comment"># installing component</span>
+  <span class="hljs-comment">#  create src/app/ok/ng-model.component.css</span>
+  <span class="hljs-comment">#  create src/app/ok/ng-model.component.html</span>
+  <span class="hljs-comment">#  create src/app/ok/ng-model.component.spec.ts</span>
+  <span class="hljs-comment">#  create src/app/ok/ng-model.component.ts</span>
+  <span class="hljs-comment">#  update src/app/app.module.ts</span>
+</code></pre>
+<h3 id="&#x8BBE;&#x7F6E;ng-model&#x7EC4;&#x4EF6;&#x6837;&#x5F0F;">&#x8BBE;&#x7F6E;ng-model&#x7EC4;&#x4EF6;&#x6837;&#x5F0F;</h3>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ui raised segment&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">form</span> [<span class="hljs-attr">formGroup</span>]=<span class="hljs-string">&quot;myForm&quot;</span>
+        (<span class="hljs-attr">ngSubmit</span>)=<span class="hljs-string">&quot;onSubmit(myForm.value)&quot;</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ui form&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;field&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;productNameInput&quot;</span>&gt;</span>Product Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+             <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;productNameInput&quot;</span>
+             <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Product Name&quot;</span>
+             [<span class="hljs-attr">formControl</span>]=<span class="hljs-string">&quot;myForm.get(&apos;productName&apos;)&quot;</span>
+             [(<span class="hljs-attr">ngModel</span>)]=<span class="hljs-string">&quot;productName&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ui info message&quot;</span>&gt;</span>
+      The product name is: {{productName}}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ui button&quot;</span>&gt;</span>&#x63D0;&#x4EA4;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ui button&quot;</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;myForm.reset()&quot;</span>&gt;</span>&#x91CD;&#x7F6E;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 id="&#x8BBE;&#x7F6E;ng-model&#x7EC4;&#x4EF6;&#x903B;&#x8F91;&#x90E8;&#x5206;">&#x8BBE;&#x7F6E;ng-model&#x7EC4;&#x4EF6;&#x903B;&#x8F91;&#x90E8;&#x5206;</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> {Component, OnInit} from <span class="hljs-string">&apos;@angular/core&apos;</span>;
+<span class="hljs-keyword">import</span> {
+  FormBuilder,
+  FormGroup,
+  Validators,
+} from <span class="hljs-string">&quot;@angular/forms&quot;</span>
+
+@Component({
+  selector: <span class="hljs-string">&apos;app-ng-model&apos;</span>,
+  templateUrl: <span class="hljs-string">&apos;./ng-model.component.html&apos;</span>,
+  styleUrls: [<span class="hljs-string">&apos;./ng-model.component.css&apos;</span>]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> NgModelComponent <span class="hljs-keyword">implements</span> OnInit {
+  myForm: FormGroup;
+  productName: <span class="hljs-built_in">string</span>;
+  <span class="hljs-comment">// &#x6CE8;&#x5165;: FormBuilder</span>
+  <span class="hljs-comment">/*&#x5728;&#x8FD9;&#x671F;&#x95F4;, Angular&#x5C06;&#x4F1A;&#x6CE8;&#x5165;&#x4E00;&#x4E2A;&#x4ECE; FormBuilder &#x7C7B;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;,&#x5E76;&#x628A;&#x5B83;&#x8D4B;&#x503C;&#x7ED9; fb &#x53D8;&#x91CF;(&#x6765;
+  &#x81EA;&#x6784;&#x9020;&#x51FD;&#x6570;)*/</span>
+  <span class="hljs-keyword">constructor</span>(fb: FormBuilder) {
+    <span class="hljs-keyword">this</span>.myForm = fb.group({
+      <span class="hljs-string">&apos;productName&apos;</span>: [<span class="hljs-string">&apos;&apos;</span>, Validators.required]
+    })
+  }
+
+  onSubmit(value: <span class="hljs-built_in">string</span>): <span class="hljs-built_in">void</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x4F60;&#x7684;&#x63D0;&#x4EA4;&#x503C;&apos;</span>, value);
+  }
+
+  ngOnInit() {
+  }
+}
+</code></pre>
+
+                            </div>
+                            
+<hr>
+<div class="btn-group btn-group-justified">
+    
+    <a class="btn" href="02_directives.html"><b>上一页:</b> directives_源码解析</a>
+    
+    
+    <a class="btn" href="04_Form-Validation_&_Custom-Validator.html"><b>下一页:</b> 表单验证&自定义验证器</a>
+    
+</div>
+
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright GitBook 2018</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated May 30th 18</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../../../gitbook/gitbook.js"></script>
+
+    
+    <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+    
+
+    
+    <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+    
+
+    
+    <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+    
+    <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+    
+
+    
+    <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"title":"ngModel","level":"3.1.3.4","depth":3,"next":{"title":"表单验证&自定义验证器","level":"3.1.3.5","depth":3,"path":"angular/study_notes/from/04_Form-Validation_&_Custom-Validator.md","ref":"angular/study_notes/from/04_Form-Validation_&_Custom-Validator.md","articles":[]},"previous":{"title":"directives_源码解析","level":"3.1.3.3","depth":3,"path":"angular/study_notes/from/02_directives.md","ref":"angular/study_notes/from/02_directives.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"angular/study_notes/from/03_ng_model.md","mtime":"2018-05-30T07:16:50.335Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-30T08:18:47.609Z"},"basePath":"../../..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+

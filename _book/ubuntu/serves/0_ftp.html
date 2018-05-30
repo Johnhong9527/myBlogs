@@ -1,0 +1,750 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ftp 之路 · 代码收集</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    <link rel="next" href="01_nginx/1_nginx.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+            <a href="../.." class="logo">
+                <img src="../../gitbook/images/logo/128.png">
+                <h1>代码收集</h1>
+            </a>
+
+            
+
+            
+<a href="https://github.com/seamong/myBlogs/blob/master/doc/ubuntu/serves/0_ftp.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    <i class="octicon octicon-mark-github"></i> 在GitHub编辑本页
+</a>
+<a href="../../faq.md" class="btn btn-link pull-right hidden-xs">
+    F.A.Q
+</a>
+<a href="https://github.com/seamong/myBlogs/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    0.0.1
+</a>
+
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">介绍</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            Introduction
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            关于本文档
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">JavaScript</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../JavaScript/principle/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            原理解析
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../JavaScript/cases/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            案例解析
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">angular</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../angular/study_notes/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            Study notes
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../angular/ng.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            ng
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">css</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../css/principle/" class="list-group-item ">
+        
+
+            
+
+            
+
+            原理解析
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../css/cases/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            案例收集
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">vue</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../vue/components/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            components
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../vue/router/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            router
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../vue/vuex/" class="list-group-item ">
+        
+
+            
+
+            
+
+            VUE
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">ubuntu</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="./" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            服务器生存指南
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="0_ftp.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            ftp 之路
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="01_nginx/1_nginx.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            nginx 安装
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="02_mysql/1_mysql.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            mysql 安装
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="3_WordPress.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            WordPress 之路
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="4_GRUN.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            GRUN 之路
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="5_L2TP_Client.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            L2TP Client 之路
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+        
+        <a href="../instruction.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            常用指令
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">GIT</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../git/git.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            git 命令
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../other/faq.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            FAQ
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../other/examples.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            Examples
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+
+                            <div class="gb-markdown book-page-inner">
+                                <h3 id="&#x5B89;&#x88C5;vsftp">&#x5B89;&#x88C5;vsftp</h3>
+<pre><code>sudo apt-get update
+sudo apt-get install vsftpd
+</code></pre><h3 id="&#x521B;&#x5EFA;ftp&#x6587;&#x4EF6;&#x5939;">&#x521B;&#x5EFA;ftp&#x6587;&#x4EF6;&#x5939;</h3>
+<pre><code>sudo mkdir  *ftp&#x6587;&#x4EF6;&#x5939;*
+</code></pre><h3 id="&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x5939;&#x6743;&#x9650;">&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x5939;&#x6743;&#x9650;</h3>
+<pre><code>sudo  chmod -R 777 *ftp&#x6587;&#x4EF6;&#x5939;*
+</code></pre><h3 id="&#x521B;&#x5EFA;ftp&#x7528;&#x6237;">&#x521B;&#x5EFA;FTP&#x7528;&#x6237;</h3>
+<pre><code># &#x521B;&#x5EFA;&#x7528;&#x6237;&#x5E76;&#x6307;&#x5B9A;&#x76EE;&#x5F55;
+sudo useradd -d *ftp&#x6587;&#x4EF6;&#x5939;*/ &#x7528;&#x6237;&#x540D;
+# &#x8BBE;&#x7F6E;ftp&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;
+sudo passwd ftp&#x7528;&#x6237;&#x540D;
+</code></pre><h3 id="&#x8BBE;&#x7F6E;&#x76F8;&#x5173;&#x914D;&#x7F6E;">&#x8BBE;&#x7F6E;&#x76F8;&#x5173;&#x914D;&#x7F6E;</h3>
+<pre><code>sudo vim /etc/vsftpd.conf
+
+# &#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5185;&#x5BB9;
+userlist_deny=NO
+userlist_enable=YES
+# &#x5141;&#x8BB8;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;
+userlist_file=/etc/allowed_users
+seccomp_sandbox=NO
+# &#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x7684;&#x6587;&#x4EF6;&#x5939;
+local_root=*ftp&#x6587;&#x4EF6;&#x5939;*
+local_enable=YES
+write_enable=YES
+# &#x4F7F;&#x7528;utf8
+utf8_filesystem=YES
+</code></pre><h3 id="&#x4FEE;&#x6539;-etcpamdvsftpd">&#x4FEE;&#x6539; /etc/pam.d/vsftpd</h3>
+<pre><code>sudo vim /etc/pam.d/vsftpd
+# &#x5728;auth required pam_shells.so&#x524D;&#x52A0;#
+</code></pre><h3 id="&#x64CD;&#x4F5C;&#x547D;&#x4EE4;">&#x64CD;&#x4F5C;&#x547D;&#x4EE4;</h3>
+<pre><code># &#x542F;&#x52A8;&#x505C;&#x6B62;&#x91CD;&#x542F;&#x670D;&#x52A1;
+sudo /etc/init.d/vsftpd start
+sudo /etc/init.d/vsftpd stop
+sudo /etc/init.d/vsftpd restart
+# &#x67E5;&#x770B;&#x670D;&#x52A1;&#x72B6;&#x6001;
+service vsftpd status
+</code></pre><h3 id="&#x8BBF;&#x95EE;ftp&#x670D;&#x52A1;&#x5668;">&#x8BBF;&#x95EE;ftp&#x670D;&#x52A1;&#x5668;</h3>
+<pre><code># bash &#x8BBF;&#x95EE;
+sudo ftp 127.0.0.1
+# &#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;
+ftp://127.0.0.1
+# &#x6216;&#x8005;
+ftp//localhost
+</code></pre><h4 id="&#x6CE8;&#x610F;&#x70B9;">&#x6CE8;&#x610F;&#x70B9;</h4>
+<blockquote>
+<p>1.&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x5B89;&#x5168;&#x7B56;&#x7565;&#x7EC4;&#x6743;&#x9650;
+2.ftp&#x6587;&#x4EF6;&#x5939;&#x6CE8;&#x610F;&#x8BBE;&#x7F6E;&#x6743;&#x9650;</p>
+</blockquote>
+<h5 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h5>
+<p><a href="http://www.jianshu.com/p/b66066a70cd4" target="_blank">&#x6700;&#x7B80;&#x5355;&#x9760;&#x8C31;&#x7684;vsftpd&#x5B89;&#x88C5;&#x6307;&#x5357;&#xFF08;Ubuntu16.04&#xFF09;</a><br>
+<a href="http://www.cnblogs.com/xuanxufeng/p/6235494.html" target="_blank">Ubuntu 16.04 &#x5B89;&#x88C5;ftp&#x670D;&#x52A1;&#x5668;&#x4F20;&#x8F93;&#x6587;&#x4EF6;</a></p>
+
+                            </div>
+                            
+<hr>
+<div class="btn-group btn-group-justified">
+    
+    <a class="btn" href="./"><b>上一页:</b> 服务器生存指南</a>
+    
+    
+    <a class="btn" href="01_nginx/1_nginx.html"><b>下一页:</b> nginx 安装</a>
+    
+</div>
+
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright GitBook 2018</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated May 30th 18</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../../gitbook/gitbook.js"></script>
+
+    
+    <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"title":"ftp 之路","level":"6.1.1","depth":2,"next":{"title":"nginx 安装","level":"6.1.2","depth":2,"path":"ubuntu/serves/01_nginx/1_nginx.md","ref":"ubuntu/serves/01_nginx/1_nginx.md","articles":[{"title":"指令","level":"6.1.2.1","depth":3,"path":"ubuntu/serves/01_nginx/2_instruction.md","ref":"ubuntu/serves/01_nginx/2_instruction.md","articles":[]}]},"previous":{"title":"服务器生存指南","level":"6.1","depth":1,"path":"ubuntu/serves/README.md","ref":"ubuntu/serves/README.md","articles":[{"title":"ftp 之路","level":"6.1.1","depth":2,"path":"ubuntu/serves/0_ftp.md","ref":"ubuntu/serves/0_ftp.md","articles":[]},{"title":"nginx 安装","level":"6.1.2","depth":2,"path":"ubuntu/serves/01_nginx/1_nginx.md","ref":"ubuntu/serves/01_nginx/1_nginx.md","articles":[{"title":"指令","level":"6.1.2.1","depth":3,"path":"ubuntu/serves/01_nginx/2_instruction.md","ref":"ubuntu/serves/01_nginx/2_instruction.md","articles":[]}]},{"title":"mysql 安装","level":"6.1.3","depth":2,"path":"ubuntu/serves/02_mysql/1_mysql.md","ref":"ubuntu/serves/02_mysql/1_mysql.md","articles":[{"title":"指令","level":"6.1.3.1","depth":3,"path":"ubuntu/serves/02_mysql/2_instruction.md","ref":"ubuntu/serves/02_mysql/2_instruction.md","articles":[]}]},{"title":"WordPress 之路","level":"6.1.4","depth":2,"path":"ubuntu/serves/3_WordPress.md","ref":"ubuntu/serves/3_WordPress.md","articles":[]},{"title":"GRUN 之路","level":"6.1.5","depth":2,"path":"ubuntu/serves/4_GRUN.md","ref":"ubuntu/serves/4_GRUN.md","articles":[]},{"title":"L2TP Client 之路","level":"6.1.6","depth":2,"path":"ubuntu/serves/5_L2TP_Client.md","ref":"ubuntu/serves/5_L2TP_Client.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"ubuntu/serves/0_ftp.md","mtime":"2018-05-30T06:00:22.426Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-30T08:18:47.609Z"},"basePath":"../..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+
