@@ -24,7 +24,7 @@ module.exports = {
 
     pluginsConfig: {
         sitemap: {
-            hostname: "https://toolchain.gitbook.com",
+            hostname: "https://blog.honghaitao.net/",
         },
         "search-pro": {
             cutWordLib: "nodejieba",
