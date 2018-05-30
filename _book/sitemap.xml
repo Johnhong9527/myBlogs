@@ -55,7 +55,6 @@
 <url> <loc>https://blog.honghaitao.net/other/faq.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/other/examples.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/./</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.honghaitao.net/../</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/0_data_type.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/001_object.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>

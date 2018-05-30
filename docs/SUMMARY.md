@@ -1,8 +1,7 @@
 # Summary
 
 ## 介绍
-* [Introduction](README.md)
-* [关于本文档](../README.md)
+* [关于本文档](README.md)
 
 ## JavaScript
 * [原理解析](JavaScript/principle/README.md)
