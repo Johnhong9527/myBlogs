@@ -16,9 +16,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "gitbook serve ./docs ./gh-pages",
-    "build": "gitbook build ./docs ./gh-pages",
-    "deploy": "node ./bin/deploy-gh-pages.js",
+    "deploy": "git subtree push --prefix=_book origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
