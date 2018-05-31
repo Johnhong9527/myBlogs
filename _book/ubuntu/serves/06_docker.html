@@ -737,6 +737,17 @@
 <a href="https://github.com/luizcarlosfaria/kb/wiki/Docker-no-Windows-vs-Docker-no-Linux" target="_blank">Docker-no-Windows-vs-Docker-no-Linux</a><br>
 <a href="https://blog.csdn.net/wenwenxiong/article/details/78728696" target="_blank">Docker&#x914D;&#x7F6E;&#x672C;&#x5730;&#x955C;&#x50CF;&#x4E0E;&#x5BB9;&#x5668;&#x7684;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;</a><br>
 &#x641C;&#x7D22;&#x6761;&#x4EF6;:docker OSType</p>
+<h3 id="development-mode">Development mode</h3>
+<pre><code>docker run --rm -v $(pwd):/src -w /src -p 8080:8080 node:6 bash -c &quot;npm install &amp;&amp; npm run dev&quot;
+</code></pre><h3 id="build-for-production">Build for production</h3>
+<pre><code>docker run --rm -v $(pwd):/src -w /src node:6 bash -c &quot;npm install &amp;&amp; npm run build&quot;
+</code></pre><h3 id="command-breakout">Command breakout</h3>
+<p><code>--rm</code> tells Docker to delete the container when it is stopped (otherwise you&#x2019;ll end up with a new container every time you start or build your app).</p>
+<p>node:6 is the name of the image.</p>
+<p><code>-v</code> .:/src mounts the current directory (.) at the root of the container in a folder named /src. This is very similar to a virtual drive (Windows) or a virtual disk (Un*x/OSX).</p>
+<p><code>-w</code> /src sets the container&#x2019;s working directory (where commands will be executed) at the folder we just created.</p>
+<p><code>-p</code> 8080:8080 opens the port 8080 of the container to your local browser (needed by Webpack dev server)</p>
+<p><code>bash -c</code> &quot;...&quot; starts a new bash instance inside the container, useful for such complicated bash commands using an &amp;&amp; that may be misinterpreted by your system&#x2019;s shell.</p>
 
                             </div>
                             
@@ -810,7 +821,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"docker之路","level":"6.1.7","depth":2,"next":{"title":"mongodb之路","level":"6.1.8","depth":2,"path":"ubuntu/serves/07_mongodb.md","ref":"ubuntu/serves/07_mongodb.md","articles":[]},"previous":{"title":"L2TP Client 之路","level":"6.1.6","depth":2,"path":"ubuntu/serves/05_L2TP_Client.md","ref":"ubuntu/serves/05_L2TP_Client.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"ubuntu/serves/06_docker.md","mtime":"2018-05-31T02:43:29.630Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-31T08:59:43.701Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"docker之路","level":"6.1.7","depth":2,"next":{"title":"mongodb之路","level":"6.1.8","depth":2,"path":"ubuntu/serves/07_mongodb.md","ref":"ubuntu/serves/07_mongodb.md","articles":[]},"previous":{"title":"L2TP Client 之路","level":"6.1.6","depth":2,"path":"ubuntu/serves/05_L2TP_Client.md","ref":"ubuntu/serves/05_L2TP_Client.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"ubuntu/serves/06_docker.md","mtime":"2018-05-31T09:03:15.447Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-31T09:03:46.765Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
