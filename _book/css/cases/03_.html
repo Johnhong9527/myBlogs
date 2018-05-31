@@ -820,9 +820,113 @@ forwards<br>
 &#x52A8;&#x753B;&#x5C06;&#x4F1A;&#x6267;&#x884C; forwards &#x548C; backwards &#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C;&#x3002;</p>
 </blockquote>
 <p>animation-iteration-count
-animation-name
-animation-play-state
-animation-timing-function</p>
+&#x5B9A;&#x4E49;:</p>
+<pre><code>CSS &#x5C5E;&#x6027;   &#x5B9A;&#x4E49;&#x52A8;&#x753B;&#x5728;&#x7ED3;&#x675F;&#x524D;&#x8FD0;&#x884C;&#x7684;&#x6B21;&#x6570; &#x53EF;&#x4EE5;&#x662F;1&#x6B21; &#x65E0;&#x9650;&#x5FAA;&#x73AF;.
+&#x9ED8;&#x8BA4;&#x5C5E;&#x6027; animation &#x9ED8;&#x8BA4;&#x64AD;&#x653E;&#x52A8;&#x753B;&#x5FAA;&#x73AF;&#x4E00;&#x6B21;.
+</code></pre><p>&#x8BED;&#x6CD5;:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x4F7F;&#x7528;&#x89C4;&#x8303; &lt;single-animation-iteration-count&gt; = infinite | &lt;number&gt; */</span>
+<span class="hljs-selector-tag">animation-iteration-count</span>: <span class="hljs-selector-tag">infinite</span>;
+<span class="hljs-selector-tag">animation-iteration-count</span>: 3;
+<span class="hljs-selector-tag">animation-iteration-count</span>: 2<span class="hljs-selector-class">.3</span>;
+<span class="hljs-selector-tag">animation-iteration-count</span>: 2, 0, <span class="hljs-selector-tag">infinite</span>;
+</code></pre>
+<h3 id="animation-name">animation-name</h3>
+<p>&#x5B9A;&#x4E49;</p>
+<pre><code>&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x5E94;&#x7528;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x52A8;&#x753B;&#xFF0C;&#x6BCF;&#x4E2A;&#x540D;&#x79F0;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x7531;@keyframes&#x5B9A;&#x4E49;&#x7684;&#x52A8;&#x753B;&#x5E8F;&#x5217;&#x3002;
+</code></pre><pre><code class="lang-css"><span class="hljs-comment">/* Single animation */</span>
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">none</span>;
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">test_05</span>;
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">-specific</span>;
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">sliding-vertically</span>;
+
+<span class="hljs-comment">/* Multiple animations */</span>
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">test1</span>, <span class="hljs-selector-tag">animation4</span>;
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">none</span>, <span class="hljs-selector-tag">-moz-specific</span>, <span class="hljs-selector-tag">sliding</span>;
+
+<span class="hljs-comment">/* Global values */</span>
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">initial</span>
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">inherit</span>
+<span class="hljs-selector-tag">animation-name</span>: <span class="hljs-selector-tag">unset</span>
+</code></pre>
+<h3 id="animation-play-state">animation-play-state</h3>
+<p>&#x5B9A;&#x4E49;:</p>
+<pre><code>CSS &#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x52A8;&#x753B;&#x662F;&#x5426;&#x8FD0;&#x884C;&#x6216;&#x8005;&#x6682;&#x505C;&#x3002;
+&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x67E5;&#x8BE2;&#x5B83;&#x6765;&#x786E;&#x5B9A;&#x52A8;&#x753B;&#x662F;&#x5426;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x3002;
+&#x53E6;&#x5916;&#xFF0C;&#x5B83;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x6682;&#x505C;&#x548C;&#x6062;&#x590D;&#x7684;&#x52A8;&#x753B;&#x7684;&#x91CD;&#x653E;&#x3002;
+&#x6062;&#x590D;&#x4E00;&#x4E2A;&#x5DF2;&#x6682;&#x505C;&#x7684;&#x52A8;&#x753B;&#xFF0C;&#x5C06;&#x4ECE;&#x5B83;&#x5F00;&#x59CB;&#x6682;&#x505C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4ECE;&#x52A8;&#x753B;&#x5E8F;&#x5217;&#x7684;&#x8D77;&#x70B9;&#x5F00;&#x59CB;&#x5728;&#x52A8;&#x753B;&#x3002;
+</code></pre><p>&#x8BED;&#x6CD5;</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x6B63;&#x5F0F;&#x8BED;&#x6CD5; =&gt; &lt;single-animation-play-state&gt; = running | paused */</span>
+<span class="hljs-comment">/* Single animation=&gt;&#x5355;&#x4E00;&#x52A8;&#x753B; */</span>
+<span class="hljs-selector-tag">animation-play-state</span>: <span class="hljs-selector-tag">running</span>;
+<span class="hljs-selector-tag">animation-play-state</span>: <span class="hljs-selector-tag">paused</span>;
+
+<span class="hljs-comment">/* Multiple animations=&gt;&#x591A;&#x4E2A;&#x52A8;&#x753B; */</span>
+<span class="hljs-selector-tag">animation-play-state</span>: <span class="hljs-selector-tag">paused</span>, <span class="hljs-selector-tag">running</span>, <span class="hljs-selector-tag">running</span>;
+
+<span class="hljs-comment">/* Global values=&gt;&#x5168;&#x7403;&#x4EF7;&#x503C; */</span>
+<span class="hljs-selector-tag">animation-play-state</span>: <span class="hljs-selector-tag">inherited</span>;
+<span class="hljs-selector-tag">animation-play-state</span>: <span class="hljs-selector-tag">initial</span>;
+<span class="hljs-selector-tag">animation-play-state</span>: <span class="hljs-selector-tag">unset</span>;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5C5E;&#x6027;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">running</td>
+<td>&#x5F53;&#x524D;&#x52A8;&#x753B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">paused</td>
+<td>&#x5F53;&#x524D;&#x52A8;&#x753B;&#x4EE5;&#x88AB;&#x505C;&#x6B62;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="animation-timing-function">animation-timing-function</h3>
+<p>&#x5C5E;&#x6027;</p>
+<pre><code>&#x5B9A;&#x4E49;CSS&#x52A8;&#x753B;&#x5728;&#x6BCF;&#x4E00;&#x52A8;&#x753B;&#x5468;&#x671F;&#x4E2D;&#x6267;&#x884C;&#x7684;&#x8282;&#x594F;&#x3002;
+&#x53EF;&#x80FD;&#x503C;&#x4E3A;&#x4E00;&#x6216;&#x591A;&#x4E2A; &lt;timing-function&gt;&#x3002;
+
+&#x5BF9;&#x4E8E;&#x5173;&#x952E;&#x5E27;&#x52A8;&#x753B;&#x6765;&#x8BF4;&#xFF0C;timing function&#x4F5C;&#x7528;&#x4E8E;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5E27;&#x5468;&#x671F;&#x800C;&#x975E;&#x6574;&#x4E2A;&#x52A8;&#x753B;&#x5468;&#x671F;&#xFF0C;
+&#x5373;&#x4ECE;&#x5173;&#x952E;&#x5E27;&#x5F00;&#x59CB;&#x5F00;&#x59CB;&#xFF0C;&#x5230;&#x5173;&#x952E;&#x5E27;&#x7ED3;&#x675F;&#x7ED3;&#x675F;&#x3002;
+
+&#x5B9A;&#x4E49;&#x4E8E;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5E27;&#x533A;&#x5757;&#x7684;&#x7F13;&#x52A8;&#x51FD;&#x6570;(animation timing function)&#x5E94;&#x7528;&#x5230;&#x6539;&#x5173;&#x952E;&#x5E27;&#xFF1B;
+&#x53E6;&#x5916;&#xFF0C;&#x82E5;&#x8BE5;&#x5173;&#x952E;&#x5E27;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x7F13;&#x52A8;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x5B9A;&#x4E49;&#x4E8E;&#x6574;&#x4E2A;&#x52A8;&#x753B;&#x7684;&#x7F13;&#x52A8;&#x51FD;&#x6570;&#x3002;
+</code></pre><p>&#x793A;&#x4F8B;</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Keyword values */</span>
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">ease</span>;
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">ease-in</span>;
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">ease-out</span>;
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">ease-in-out</span>;
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">linear</span>;
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">step-start</span>;
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">step-end</span>;
+
+<span class="hljs-comment">/* Function values */</span>
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">cubic-bezier</span>(0<span class="hljs-selector-class">.1</span>, 0<span class="hljs-selector-class">.7</span>, 1<span class="hljs-selector-class">.0</span>, 0<span class="hljs-selector-class">.1</span>);
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">steps</span>(4, <span class="hljs-selector-tag">end</span>);
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">frames</span>(10);
+
+<span class="hljs-comment">/* Multiple animations */</span>
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">ease</span>, <span class="hljs-selector-tag">step-start</span>, <span class="hljs-selector-tag">cubic-bezier</span>(0<span class="hljs-selector-class">.1</span>, 0<span class="hljs-selector-class">.7</span>, 1<span class="hljs-selector-class">.0</span>, 0<span class="hljs-selector-class">.1</span>);
+
+<span class="hljs-comment">/* Global values */</span>
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">inherit</span>;
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">initial</span>;
+<span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">unset</span>;
+</code></pre>
+<h2 id="faq">FAQ</h2>
+<p><a href="https://segmentfault.com/a/1190000004618375" target="_blank">&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;(cubic-bezier)</a><br>
+&#x7591;&#x60D1;&#x70B9;:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">cubic-bezier</span>(0<span class="hljs-selector-class">.1</span>, 0<span class="hljs-selector-class">.7</span>, 1<span class="hljs-selector-class">.0</span>, 0<span class="hljs-selector-class">.1</span>);
+</code></pre>
+<p><a href="https://idiotwu.me/understanding-css3-timing-function-steps/" target="_blank">CSS3 timing-function: steps() &#x8BE6;&#x89E3;</a></p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">animation-timing-function</span>: <span class="hljs-selector-tag">steps</span>(4, <span class="hljs-selector-tag">end</span>);
+</code></pre>
 <h2 id="cylon-&#x773C;&#x775B;">Cylon &#x773C;&#x775B;</h2>
 <p>&#x8003;&#x8651;&#x5230;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x7279;&#x5B9A;&#x7684;&#x524D;&#x7F00;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;Cylon &#x773C;&#x775B;&#x52A8;&#x753B;&#x5408;&#x5E76;&#x7EBF;&#x6027;&#x6E10;&#x53D8;&#x548C;&#x52A8;&#x753B;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x4E3B;&#x8981;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF1A;</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;view_port&quot;</span>&gt;</span>
@@ -941,7 +1045,7 @@ animation-timing-function</p>
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"css动画","level":"4.2.4","depth":2,"next":{"title":"components","level":"5.1","depth":1,"path":"vue/components/README.md","ref":"vue/components/README.md","articles":[{"title":"组件传值_props","level":"5.1.1","depth":2,"path":"vue/components/props.md","ref":"vue/components/props.md","articles":[]}]},"previous":{"title":"flex布局","level":"4.2.3","depth":2,"path":"css/cases/02_.md","ref":"css/cases/02_.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"css/cases/03_.md","mtime":"2018-05-31T06:22:52.541Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-31T06:23:00.958Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"css动画","level":"4.2.4","depth":2,"next":{"title":"components","level":"5.1","depth":1,"path":"vue/components/README.md","ref":"vue/components/README.md","articles":[{"title":"组件传值_props","level":"5.1.1","depth":2,"path":"vue/components/props.md","ref":"vue/components/props.md","articles":[]}]},"previous":{"title":"flex布局","level":"4.2.3","depth":2,"path":"css/cases/02_.md","ref":"css/cases/02_.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"css/cases/03_.md","mtime":"2018-05-31T08:21:16.653Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-31T08:27:54.027Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
