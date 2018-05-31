@@ -73,6 +73,7 @@
 
 ## NODE&NPM
 * [node](./node/0.md)
+    * [nodejs+phantomjs+nodemailer](./node/01_nodejs_phantomjs_nodemailer.md)
 * [npm](./node/npm/0.md)
 
 -----

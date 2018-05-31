@@ -3,6 +3,7 @@
  添加远程仓库
 ```bash
 git remote add origin git@github.com:seamong/gitbook
+git push -u origin master
 ```
  本地创建远程分支
 ```bash
