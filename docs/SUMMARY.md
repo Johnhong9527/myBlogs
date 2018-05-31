@@ -42,6 +42,7 @@
     * [去除表格单元格边距](css/cases/0_.md)
     * [媒体查询](css/cases/01_.md)
     * [flex布局](css/cases/02_.md)
+    * [css动画](css/cases/03_.md)
 
 ## vue
 * [components](vue/components/README.md)
@@ -57,13 +58,22 @@
         * [指令](ubuntu/serves/01_nginx/2_instruction.md)
     * [mysql 安装](ubuntu/serves/02_mysql/1_mysql.md)
         * [指令](ubuntu/serves/02_mysql/2_instruction.md)
-    * [WordPress 之路](ubuntu/serves/3_WordPress.md)
-    * [GRUN 之路](ubuntu/serves/4_GRUN.md)
-    * [L2TP Client 之路](ubuntu/serves/5_L2TP_Client.md)
+    * [WordPress 之路](ubuntu/serves/03_WordPress.md)
+    * [GRUN 之路](ubuntu/serves/04_GRUN.md)
+    * [L2TP Client 之路](ubuntu/serves/05_L2TP_Client.md)
+    * [docker之路](ubuntu/serves/06_docker.md)
+    * [mongodb之路](ubuntu/serves/07_mongodb.md)
 * [常用指令](ubuntu/instruction.md)
+* [常用软件安装](ubuntu/software/README.md)
 
 ## GIT
 * [git 命令](./git/git.md)
+* [git~push](./git/push.md)
+* [git~F.A.Q](./git/faq.md)
+
+## NODE&NPM
+* [node](./node/0.md)
+* [npm](./node/npm/0.md)
 
 -----
 * [FAQ](other/faq.md)

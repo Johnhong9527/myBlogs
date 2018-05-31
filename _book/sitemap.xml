@@ -35,6 +35,7 @@
 <url> <loc>https://blog.honghaitao.net/css/cases/0_.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/css/cases/01_.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/css/cases/02_.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/css/cases/03_.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/vue/components/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/vue/components/props.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/vue/router/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -46,11 +47,18 @@
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/01_nginx/2_instruction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/02_mysql/1_mysql.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/02_mysql/2_instruction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.honghaitao.net/ubuntu/serves/3_WordPress.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.honghaitao.net/ubuntu/serves/4_GRUN.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.honghaitao.net/ubuntu/serves/5_L2TP_Client.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/ubuntu/serves/03_WordPress.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/ubuntu/serves/04_GRUN.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/ubuntu/serves/05_L2TP_Client.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/ubuntu/serves/06_docker.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/ubuntu/serves/07_mongodb.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/instruction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/ubuntu/software/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/git/git.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/git/push.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/git/faq.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/node/0.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/node/npm/0.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/other/faq.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/other/examples.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>

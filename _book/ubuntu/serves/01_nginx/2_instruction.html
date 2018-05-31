@@ -459,7 +459,7 @@
         
     
         
-        <a href="../3_WordPress.html" class="list-group-item ">
+        <a href="../03_WordPress.html" class="list-group-item ">
         
 
             
@@ -477,7 +477,7 @@
         
     
         
-        <a href="../4_GRUN.html" class="list-group-item ">
+        <a href="../04_GRUN.html" class="list-group-item ">
         
 
             
@@ -495,7 +495,7 @@
         
     
         
-        <a href="../5_L2TP_Client.html" class="list-group-item ">
+        <a href="../05_L2TP_Client.html" class="list-group-item ">
         
 
             
@@ -505,6 +505,42 @@
             
 
             L2TP Client 之路
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../06_docker.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            docker之路
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../07_mongodb.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            mongodb之路
 
         
         </a>
@@ -524,6 +560,22 @@
             
 
             常用指令
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../software/" class="list-group-item ">
+        
+
+            
+
+            
+
+            常用软件安装
 
         
         </a>
@@ -554,6 +606,84 @@
             
 
             git 命令
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../git/push.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            git~push
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../git/faq.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            git~F.A.Q
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">NODE&NPM</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../node/0.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            node
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../node/npm/0.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            npm
 
         
         </a>
@@ -620,31 +750,34 @@
 
                             <div class="gb-markdown book-page-inner">
                                 <h3 id="&#x67E5;&#x770B;nginx&#x8FDB;&#x7A0B;&#xFF1A;nginx&#x7684;&#x8FDB;&#x7A0B;&#x7531;&#x4E3B;&#x8FDB;&#x7A0B;&#x548C;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7EC4;&#x6210;">&#x67E5;&#x770B;nginx&#x8FDB;&#x7A0B;&#xFF1A;nginx&#x7684;&#x8FDB;&#x7A0B;&#x7531;&#x4E3B;&#x8FDB;&#x7A0B;&#x548C;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x7EC4;&#x6210;</h3>
-<pre><code>ps -ef|grep nginx
-</code></pre><h3 id="&#x542F;&#x52A8;nginx">&#x542F;&#x52A8;nginx</h3>
-<pre><code>service nginx start
-</code></pre><h3 id="&#x5E73;&#x6ED1;&#x542F;&#x52A8;nginx">&#x5E73;&#x6ED1;&#x542F;&#x52A8;nginx</h3>
-<pre><code>kill -HUP `cat /var/run/nginx.pid`
-&#x6216;&#x8005; nginx -s reload
-</code></pre><h3 id="&#x5B8C;&#x7F8E;&#x505C;&#x6B62;nginx">&#x5B8C;&#x7F8E;&#x505C;&#x6B62;nginx</h3>
-<pre><code>kill -TERM `cat /var/run/nginx.pid`
-&#x6216;&#x8005;
-kill -INT `cat /var/run/nginx.pid`
-</code></pre><h3 id="&#x5B8C;&#x7F8E;&#x505C;&#x6B62;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;">&#x5B8C;&#x7F8E;&#x505C;&#x6B62;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;</h3>
-<pre><code>kill -WINCH `cat /var/run/nginx.pid`
-&#x6216;&#x8005;
-kill -INT `cat /var/run/nginx.pid`
-</code></pre><h3 id="&#x5F3A;&#x5236;&#x505C;&#x6B62;nginx">&#x5F3A;&#x5236;&#x505C;&#x6B62;nginx</h3>
-<pre><code>pkill -9 nginx
-</code></pre><h3 id="&#x68C0;&#x67E5;&#x5BF9;nginxconf&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x662F;&#x5426;&#x6B63;&#x786E;">&#x68C0;&#x67E5;&#x5BF9;nginx.conf&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x662F;&#x5426;&#x6B63;&#x786E;</h3>
-<pre><code class="lang-js">nginx -t -c /etc/nginx/nginx.conf
+<pre><code class="lang-bash">ps -ef|grep nginx
+</code></pre>
+<h3 id="&#x542F;&#x52A8;nginx">&#x542F;&#x52A8;nginx</h3>
+<pre><code class="lang-bash">service nginx start
+<span class="hljs-comment"># &#x5E73;&#x6ED1;&#x542F;&#x52A8;nginx</span>
+<span class="hljs-built_in">kill</span> -HUP `cat /var/run/nginx.pid`
+<span class="hljs-comment"># or</span>
+nginx <span class="hljs-_">-s</span> reload
+</code></pre>
+<h3 id="&#x505C;&#x6B62;nginx">&#x505C;&#x6B62;nginx</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5B8C;&#x7F8E;&#x505C;&#x6B62;nginx</span>
+<span class="hljs-built_in">kill</span> -TERM `cat /var/run/nginx.pid`
+<span class="hljs-comment"># or</span>
+<span class="hljs-built_in">kill</span> -INT `cat /var/run/nginx.pid`
+<span class="hljs-comment"># &#x5B8C;&#x7F8E;&#x505C;&#x6B62;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;</span>
+<span class="hljs-built_in">kill</span> -WINCH `cat /var/run/nginx.pid`
+<span class="hljs-comment"># &#x5F3A;&#x5236;&#x505C;&#x6B62;nginx</span>
+pkill -9 nginx
+<span class="hljs-comment"># &#x505C;&#x6B62;nginx&#x7684;&#x547D;&#x4EE4;</span>
+nginx <span class="hljs-_">-s</span> stop
+</code></pre>
+<h3 id="&#x68C0;&#x67E5;&#x5BF9;nginxconf&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x662F;&#x5426;&#x6B63;&#x786E;">&#x68C0;&#x67E5;&#x5BF9;nginx.conf&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x662F;&#x5426;&#x6B63;&#x786E;</h3>
+<pre><code class="lang-bash">nginx -t -c /etc/nginx/nginx.conf
 &#x6216;&#x8005;
 nginx -t
 </code></pre>
-<h3 id="&#x505C;&#x6B62;nginx&#x7684;&#x547D;&#x4EE4;">&#x505C;&#x6B62;nginx&#x7684;&#x547D;&#x4EE4;</h3>
-<pre><code>nginx -s stop
-</code></pre><h3 id="&#x67E5;&#x770B;nginx&#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;">&#x67E5;&#x770B;nginx&#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;</h3>
-<pre><code class="lang-js">nginx -v
+<h3 id="&#x67E5;&#x770B;nginx&#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;">&#x67E5;&#x770B;nginx&#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;</h3>
+<pre><code class="lang-bash">nginx -v
 </code></pre>
 
                             </div>
@@ -692,7 +825,7 @@ nginx -t
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated May 30th 18</a>
+                    <a href="#">Updated May 31st 18</a>
                 </li>
             </ul>
         </div>
@@ -719,7 +852,7 @@ nginx -t
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"指令","level":"6.1.2.1","depth":3,"next":{"title":"mysql 安装","level":"6.1.3","depth":2,"path":"ubuntu/serves/02_mysql/1_mysql.md","ref":"ubuntu/serves/02_mysql/1_mysql.md","articles":[{"title":"指令","level":"6.1.3.1","depth":3,"path":"ubuntu/serves/02_mysql/2_instruction.md","ref":"ubuntu/serves/02_mysql/2_instruction.md","articles":[]}]},"previous":{"title":"nginx 安装","level":"6.1.2","depth":2,"path":"ubuntu/serves/01_nginx/1_nginx.md","ref":"ubuntu/serves/01_nginx/1_nginx.md","articles":[{"title":"指令","level":"6.1.2.1","depth":3,"path":"ubuntu/serves/01_nginx/2_instruction.md","ref":"ubuntu/serves/01_nginx/2_instruction.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"ubuntu/serves/01_nginx/2_instruction.md","mtime":"2018-05-30T08:23:34.368Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-30T08:59:17.444Z"},"basePath":"../../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"指令","level":"6.1.2.1","depth":3,"next":{"title":"mysql 安装","level":"6.1.3","depth":2,"path":"ubuntu/serves/02_mysql/1_mysql.md","ref":"ubuntu/serves/02_mysql/1_mysql.md","articles":[{"title":"指令","level":"6.1.3.1","depth":3,"path":"ubuntu/serves/02_mysql/2_instruction.md","ref":"ubuntu/serves/02_mysql/2_instruction.md","articles":[]}]},"previous":{"title":"nginx 安装","level":"6.1.2","depth":2,"path":"ubuntu/serves/01_nginx/1_nginx.md","ref":"ubuntu/serves/01_nginx/1_nginx.md","articles":[{"title":"指令","level":"6.1.2.1","depth":3,"path":"ubuntu/serves/01_nginx/2_instruction.md","ref":"ubuntu/serves/01_nginx/2_instruction.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"ubuntu/serves/01_nginx/2_instruction.md","mtime":"2018-05-31T03:09:21.620Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-05-31T04:59:50.639Z"},"basePath":"../../..","book":{"language":""}});
 })();
 </script>
 
