@@ -780,6 +780,80 @@
 
                             <div class="gb-markdown book-page-inner">
                                 <h1 id="array">Array</h1>
+<h3 id="&#x5E38;&#x89C1;&#x4EE3;&#x7801;&#x7247;&#x6BB5;">&#x5E38;&#x89C1;&#x4EE3;&#x7801;&#x7247;&#x6BB5;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5224;&#x65AD;&#x6570;&#x7EC4;</span>
+<span class="hljs-keyword">const</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
+<span class="hljs-keyword">const</span> obj = { name: <span class="hljs-string">&quot;hello&quot;</span>, age: <span class="hljs-number">1</span> };
+
+<span class="hljs-comment">// instanceof&#x65B9;&#x6CD5;(&#x63A8;&#x8350;&#x4F7F;&#x7528;)</span>
+<span class="hljs-built_in">console</span>.log(arr <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span>); <span class="hljs-comment">//true</span>
+<span class="hljs-built_in">console</span>.log(arr <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>); <span class="hljs-comment">//true,&#x5728;&#x6570;&#x7EC4;&#x7684;&#x539F;&#x578B;&#x94FE;&#x4E0A;&#x4E5F;&#x80FD;&#x627E;&#x5230;Object&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+<span class="hljs-built_in">console</span>.log(obj <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span>); <span class="hljs-comment">//false</span>
+
+<span class="hljs-comment">// constructor&#x65B9;&#x6CD5;(&#x4E0D;&#x63A8;&#x8350;:constructor&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x88AB;&#x4FEE;&#x6539;)</span>
+<span class="hljs-keyword">const</span> a = [];
+<span class="hljs-keyword">const</span> b = {};
+<span class="hljs-keyword">const</span> c = <span class="hljs-regexp">/^[0-9]$/</span>;
+<span class="hljs-built_in">console</span>.log(a.constructor == <span class="hljs-built_in">Array</span>); <span class="hljs-comment">//true</span>
+<span class="hljs-built_in">console</span>.log(b.constructor == <span class="hljs-built_in">Array</span>); <span class="hljs-comment">//false</span>
+<span class="hljs-built_in">console</span>.log(c.constructor == <span class="hljs-built_in">Array</span>); <span class="hljs-comment">//false</span>
+
+<span class="hljs-comment">// &#x4E0D;&#x63A8;&#x8350;&#x7406;&#x7531;</span>
+<span class="hljs-keyword">const</span> a = [];
+<span class="hljs-comment">//&#x4F5C;&#x6B7B;&#x5C06;constructor&#x5C5E;&#x6027;&#x6539;&#x6210;&#x4E86;&#x522B;&#x7684;</span>
+a.contrtuctor = <span class="hljs-built_in">Object</span>;
+<span class="hljs-built_in">console</span>.log(a.constructor == <span class="hljs-built_in">Array</span>); <span class="hljs-comment">//false (&#x54ED;&#x8138;)</span>
+<span class="hljs-built_in">console</span>.log(a.constructor == <span class="hljs-built_in">Object</span>); <span class="hljs-comment">//true (&#x54ED;&#x8138;)</span>
+<span class="hljs-built_in">console</span>.log(a <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span>); <span class="hljs-comment">//true (instanceof&#x706B;&#x773C;&#x91D1;&#x775B;)</span>
+
+<span class="hljs-comment">// &#x7528;Object&#x7684;toString&#x65B9;&#x6CD5;</span>
+<span class="hljs-keyword">const</span> a = [<span class="hljs-string">&quot;Hello&quot;</span>, <span class="hljs-string">&quot;Howard&quot;</span>];
+<span class="hljs-keyword">const</span> b = { <span class="hljs-number">0</span>: <span class="hljs-string">&quot;Hello&quot;</span>, <span class="hljs-number">1</span>: <span class="hljs-string">&quot;Howard&quot;</span> };
+<span class="hljs-keyword">const</span> c = <span class="hljs-string">&quot;Hello Howard&quot;</span>;
+<span class="hljs-built_in">console</span>.log(a.toString()); <span class="hljs-comment">//&quot;Hello,Howard&quot;</span>
+<span class="hljs-built_in">console</span>.log(b.toString()); <span class="hljs-comment">//&quot;[object Object]&quot;</span>
+<span class="hljs-built_in">console</span>.log(c.toString()); <span class="hljs-comment">//&quot;Hello,Howard&quot;</span>
+<span class="hljs-comment">// &#x901A;&#x8FC7;&#x6539;&#x53D8;toString&#x6267;&#x884C;&#x65F6;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x6570;&#x7EC4;</span>
+<span class="hljs-comment">// call | apply</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(a); <span class="hljs-comment">// [object Array]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(b); <span class="hljs-comment">// [object Object]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(c); <span class="hljs-comment">// [object String]</span>
+<span class="hljs-comment">// or</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.apply(a); <span class="hljs-comment">//&quot;[object Array]&quot;</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.apply(b); <span class="hljs-comment">//&quot;[object Object]&quot;</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.apply(c); <span class="hljs-comment">//&quot;[object String]&quot;</span>
+<span class="hljs-comment">// &#x5408;&#x5E76;&#x4E0A;&#x8FF0;&#x8FC7;&#x7A0B;&#x4E3A;&#x51FD;&#x6570;</span>
+<span class="hljs-keyword">const</span> isArray = (something)=&gt;{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.prototype.toString.call(something) === <span class="hljs-string">&apos;[object Array]&apos;</span>;
+}
+<span class="hljs-keyword">const</span> a = [];
+<span class="hljs-keyword">const</span> b = {};
+isArray(a);<span class="hljs-comment">//true</span>
+isArray(b);<span class="hljs-comment">//false</span>
+
+<span class="hljs-comment">// &#x7528;Array&#x5BF9;&#x8C61;&#x7684;isArray&#x65B9;&#x6CD5;&#x5224;&#x65AD;</span>
+<span class="hljs-keyword">const</span> a = [];
+<span class="hljs-keyword">const</span> b = {};
+<span class="hljs-built_in">Array</span>.isArray(a);<span class="hljs-comment">//true</span>
+<span class="hljs-built_in">Array</span>.isArray(b);<span class="hljs-comment">//false</span>
+
+
+<span class="hljs-built_in">Object</span>.prototype.toString = ()=&gt;{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Hello Howard&apos;</span>);
+}
+<span class="hljs-keyword">const</span> a = [];
+<span class="hljs-built_in">Array</span>.isArray(a);<span class="hljs-comment">//true</span>
+
+<span class="hljs-comment">// &#x517C;&#x5BB9;&#x6027;&#x5199;&#x6CD5;</span>
+<span class="hljs-keyword">if</span> (!<span class="hljs-built_in">Array</span>.isArray) {
+  <span class="hljs-built_in">Array</span>.isArray = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">arg</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.prototype.toString.call(arg) === <span class="hljs-string">&apos;[object Array]&apos;</span>;
+  };
+}
+
+<span class="hljs-comment">// jquery&#x65B9;&#x6CD5;&#x5224;&#x65AD;</span>
+<span class="hljs-comment">// &#x5F85;&#x7EED;</span>
+</code></pre>
 <h3 id="es6-&#x5E38;&#x89C1;&#x4EE3;&#x7801;&#x7247;&#x6BB5;">es6 &#x5E38;&#x89C1;&#x4EE3;&#x7801;&#x7247;&#x6BB5;</h3>
 <pre><code class="lang-js"><span class="hljs-comment">// &#x904D;&#x5386;&#x6570;&#x7EC4;</span>
 [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, index</span>) </span>{
@@ -878,7 +952,7 @@ arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"Array","level":"2.1.3","depth":2,"next":{"title":"DOM","level":"2.1.4","depth":2,"path":"JavaScript/principle/002_DOM.md","ref":"JavaScript/principle/002_DOM.md","articles":[]},"previous":{"title":"Object","level":"2.1.2","depth":2,"path":"JavaScript/principle/001_object.md","ref":"JavaScript/principle/001_object.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"JavaScript/principle/002_array.md","mtime":"2018-06-02T09:00:12.059Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-06-02T09:06:47.995Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"Array","level":"2.1.3","depth":2,"next":{"title":"DOM","level":"2.1.4","depth":2,"path":"JavaScript/principle/002_DOM.md","ref":"JavaScript/principle/002_DOM.md","articles":[]},"previous":{"title":"Object","level":"2.1.2","depth":2,"path":"JavaScript/principle/001_object.md","ref":"JavaScript/principle/001_object.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","search-pro"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"JavaScript/principle/002_array.md","mtime":"2018-06-02T12:36:54.046Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-06-02T13:07:14.619Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
