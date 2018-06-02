@@ -7,6 +7,7 @@
 * [原理解析](JavaScript/principle/README.md)
     * [数据类型](JavaScript/principle/0_data_type.md)
     * [Object](JavaScript/principle/001_object.md)
+    * [Array](JavaScript/principle/002_array.md)
     * [DOM](JavaScript/principle/002_DOM.md)
     * [HTML DOM Document 对象](JavaScript/principle/01.md)
     * [闭包](JavaScript/principle/02.md)
@@ -59,7 +60,9 @@
     * [组件传值_props](vue/components/props.md)
 * [router](vue/router/README.md)
     * [路由懒加载](vue/router/lazy_loading.md)
-* [VUE](vue/vuex/README.md)
+* [vuex](vue/vuex/README.md)
+* [plugin](vue/plugin/README.md)
+    * [picker](vue/plugin/picker/README.md)
 
 ## ubuntu
 * [服务器生存指南](ubuntu/serves/README.md)

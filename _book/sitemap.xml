@@ -4,6 +4,7 @@
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/0_data_type.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/001_object.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/JavaScript/principle/002_array.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/002_DOM.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/01.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/JavaScript/principle/02.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -51,6 +52,8 @@
 <url> <loc>https://blog.honghaitao.net/vue/router/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/vue/router/lazy_loading.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/vue/vuex/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/vue/plugin/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/vue/plugin/picker/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/0_ftp.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/01_nginx/1_nginx.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
