@@ -142,6 +142,11 @@ wget http://nodejs.org/dist/v0.12.0/node-v0.12.0.tar.gz  //这里我是直接下
 tar xvf node-v0.12.0.tar.gz
 ```
 如果服务器没有源码编译环境， 先要下载一些编译环境，等待几分钟。
+### 设置启动区位置
+```bash
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+```
+
 ```bash
 sudo yum install gcc gcc-c++
 ```
