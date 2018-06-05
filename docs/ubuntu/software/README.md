@@ -146,6 +146,15 @@ tar xvf node-v0.12.0.tar.gz
 ```bash
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 ```
+### 声卡设置
+```
+# 解决usb耳机声音播放的问题
+gnome-alsamixer
+
+alsamixer
+
+pavucontrol(终极方案)
+```
 
 ```bash
 sudo yum install gcc gcc-c++
