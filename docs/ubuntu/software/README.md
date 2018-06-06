@@ -179,3 +179,6 @@ sudo make install
  deb http://mirrors.aliyun.com/ubuntu trusty-backports main restricted universe multiverse
  deb http://mirrors.aliyun.com/ubuntu trusty-security main restricted universe multiverse
  ```
+
+ ### 播放器
+ [smplayer](https://www.smplayer.info/)
