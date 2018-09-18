@@ -67,6 +67,7 @@
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/07_mongodb.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/instruction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/software/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/ubuntu/software/vscode.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/git/git.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/git/push.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/git/faq.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>

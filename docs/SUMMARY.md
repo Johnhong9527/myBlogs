@@ -78,6 +78,7 @@
     * [mongodb之路](ubuntu/serves/07_mongodb.md)
 * [常用指令](ubuntu/instruction.md)
 * [常用软件安装](ubuntu/software/README.md)
+    * [vscode 设置](ubuntu/software/vscode.md)
 
 ## GIT
 * [git 命令](./git/git.md)
