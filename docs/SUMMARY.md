@@ -63,8 +63,14 @@
 * [vuex](vue/vuex/README.md)
 * [plugin](vue/plugin/README.md)
     * [picker](vue/plugin/picker/README.md)
+* [jsx](vue/jsx/README.md)
+    * [V-APP](vue/jsx/V-APP.md)
+    * [v-if](vue/jsx/v-if.md)
+    * [v-for](vue/jsx/v-for.md)
+    * [v-model](vue/jsx/v-model.md)
+    * [函数式组件](vue/jsx/函数式组件.md)
 
-## ubuntu
+-----
 * [服务器生存指南](ubuntu/serves/README.md)
     * [ftp 之路](ubuntu/serves/0_ftp.md)
     * [nginx 安装](ubuntu/serves/01_nginx/1_nginx.md)

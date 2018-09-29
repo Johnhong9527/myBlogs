@@ -1,0 +1,114 @@
+html,
+body,
+.gb-markdown table tr {
+    background-color: #557bcd !important;
+}
+.gb-markdown .hljs-keyword,
+.javascript .hljs-function {
+    color: #fb1b00;
+    /* text-shadow: 1px 1px 0px white; */
+    font-weight: 900;
+}
+.hljs-comment,
+.hljs-title {
+    color: #ff00eb;
+}
+.hljs-header,
+.hljs-inheritance,
+.hljs-string,
+.hljs-value,
+.ruby .hljs-symbol,
+.xml .hljs-cdata {
+    color: #ceff00;
+}
+
+.modal > .list-group .list-group-item:last-child,
+.panel > .list-group .list-group-item:last-child,
+.modal > .list-group .list-group-item:first-child,
+.panel > .list-group .list-group-item:first-child,
+.panel.panel-default .panel-heading,
+.modal > .list-group .list-group-item,
+.panel > .list-group .list-group-item {
+    transition: all 0.3s;
+    &:hover {
+        background-color: #557bcd;
+        transform: scale(1.06, 1.2);
+        z-index: 999;
+        color: #0e0e0e;
+        border: solid 2px white;
+    }
+    background-color: #0e0e0e;
+    color: #fb1b00;
+}
+.gb-markdown {
+    code {
+        background-color: black !important;
+        margin: 3px 6px !important;
+        padding: 3px 10px !important;
+        box-shadow: 2px 2px 20px 1px #0e0e0e;
+        font-size: 17px !important;
+        color: #ff4242 !important;
+        /* background-color: black !important;
+    margin: 3px 6px !important;
+    padding: 3px 10px !important;
+    box-shadow: 1px 1px 2px 2px rgb(180, 180, 180);
+    font-size: 17px !important;
+    color: white !important; */
+        ////
+        // box-shadow: 1px 1px 20px 0px #909090 inset;
+        // border-radius: 5px;
+        /* color: white;
+    background-color: black;
+    margin: 0 6px 0 6px;
+    box-shadow: 1px 1px 4px 0px red; */
+    }
+    a {
+        color: #ccff00;
+    }
+    h2 {
+        text-align: center;
+    }
+    pre {
+        // background-color: cadetblue;
+        background-color: black;
+        code {
+            margin: 6px 6px !important;
+            line-height: 1.8;
+        }
+    }
+}
+
+.gb-page-header {
+    background: #557bcd;
+    color: #0e0e0e;
+}
+
+#book-search-input {
+    @inputPc: #a59c9c;
+    input {
+        padding: 6px 6px;
+        border-radius: 2px;
+        outline: 0;
+        box-shadow: none;
+        border: 1px solid #060606;
+        margin-top: 3px;
+        background-color: #557bcd;
+        color: #060606;
+    }
+    ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: @inputPc;
+    }
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: @inputPc;
+    }
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: @inputPc;
+    }
+    :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: @inputPc;
+    }
+}

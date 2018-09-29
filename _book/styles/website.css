@@ -1,0 +1,69 @@
+html,
+body {
+    /* background-color: #246 !important; */
+    background-color: -webkit-linear-gradient(
+        left right,
+        rgb(196, 127, 127),
+        blue
+    ) !important; /* Safari 5.1 - 6.0 */
+    background-color: -o-linear-gradient(
+        left right,
+        rgb(196, 127, 127),
+        blue
+    ) !important; /* Opera 11.1 - 12.0 */
+    background-color: -moz-linear-gradient(
+        left right,
+        rgb(196, 127, 127),
+        blue
+    ) !important; /* Firefox 3.6 - 15 */
+    background-color: linear-gradient(
+        to left right,
+        rgb(196, 127, 127),
+        blue
+    ) !important; /* 标准的语法 */
+}
+.gb-markdown code {
+    background-color: black !important;
+    margin: 0 6px 0 6px !important;
+    box-shadow: 1px 1px 4px 0px black;
+    font-size: 16px !important;
+    /* border-radius: 5px; */
+    /* color: white;
+    background-color: black;
+    margin: 0 6px 0 6px;
+    box-shadow: 1px 1px 4px 0px red; */
+}
+.gb-markdown pre {
+    background-color: cadetblue;
+    line-height: 1.5;
+}
+.gb-markdown pre code {
+    margin: 6px 6px !important;
+    color: wheat;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .css,
+.xml .hljs-cdata,
+.xml .javascript,
+.xml .vbscript {
+    opacity: 0.9;
+}
+
+.css .hljs-class,
+.css .hljs-id,
+.css .hljs-pseudo,
+.hljs-attribute,
+.hljs-regexp,
+.hljs-tag,
+.hljs-variable,
+.html .hljs-doctype,
+.ruby .hljs-constant,
+.xml .hljs-doctype,
+.xml .hljs-pi,
+.xml .hljs-tag .hljs-title {
+    /* color: #ff0000; */
+    color: #5f9ea0;
+}
