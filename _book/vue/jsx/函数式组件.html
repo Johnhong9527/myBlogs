@@ -54,7 +54,7 @@
 
 
     
-    <link rel="next" href="../../ubuntu/serves/" />
+    <link rel="next" href="class_style_ref.html" />
     
     
     <link rel="prev" href="v-model.html" />
@@ -472,6 +472,42 @@
 
         
     
+        
+        <a href="class_style_ref.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            class,style,ref
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+        
+        <a href="../vue-cli/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            vue-cli
+
+        
+        </a>
+        
 
         
     
@@ -706,6 +742,45 @@
 
                             <div class="gb-markdown book-page-inner">
                                 <h1 id="&#x51FD;&#x6570;&#x5F0F;&#x7EC4;&#x4EF6;">&#x51FD;&#x6570;&#x5F0F;&#x7EC4;&#x4EF6;</h1>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">//&#x7236;&#x7EC4;&#x4EF6;</span>
+ <span class="hljs-comment">//...&#x7701;&#x7565;&#x65E0;&#x5173;&#x4EE3;&#x7801;</span>
+render(){
+  <span class="hljs-keyword">return</span> (
+    &lt;Item data={<span class="hljs-keyword">this</span>.data} <span class="hljs-class"><span class="hljs-keyword">class</span>=&quot;<span class="hljs-title">large</span>&quot;/&gt;
+  )
+}
+//<span class="hljs-title">Item</span>.<span class="hljs-title">vue</span>&#x7EC4;&#x4EF6;
+<span class="hljs-title">export</span> <span class="hljs-title">default</span> </span>{
+  functional:<span class="hljs-literal">true</span>,
+  name: <span class="hljs-string">&quot;item&quot;</span>,
+  render(h,context){
+    <span class="hljs-keyword">return</span> (
+      &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span>=&quot;<span class="hljs-title">red</span>&quot; </span>{...context.data}&gt;
+        {context.props.data}
+      &lt;/div&gt;
+    )
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h3 id="click">click</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x7236;&#x7EC4;&#x4EF6;</span>
+methods:{
+  show(){
+    alert(<span class="hljs-string">&apos;&#x4F60;&#x597D;&apos;</span>)
+  }
+},
+render(){
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{this.data}</span> <span class="hljs-attr">onNativeClick</span>=<span class="hljs-string">{this.show}</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;large&quot;</span>/&gt;</span>
+  )
+}
+</span></code></pre>
+<p>&#x4F5C;&#x8005;&#xFF1A;fantasy525
+&#x94FE;&#x63A5;&#xFF1A;<a href="https://juejin.im/post/5affa64df265da0b93488fdd" target="_blank">https://juejin.im/post/5affa64df265da0b93488fdd</a>
+&#x6765;&#x6E90;&#xFF1A;&#x6398;&#x91D1;
+&#x8457;&#x4F5C;&#x6743;&#x5F52;&#x4F5C;&#x8005;&#x6240;&#x6709;&#x3002;&#x5546;&#x4E1A;&#x8F6C;&#x8F7D;&#x8BF7;&#x8054;&#x7CFB;&#x4F5C;&#x8005;&#x83B7;&#x5F97;&#x6388;&#x6743;&#xFF0C;&#x975E;&#x5546;&#x4E1A;&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;&#x3002;</p>
 
                             </div>
                             
@@ -715,7 +790,7 @@
     <a class="btn" href="v-model.html"><b>上一页:</b> v-model</a>
     
     
-    <a class="btn" href="../../ubuntu/serves/"><b>下一页:</b> 服务器生存指南</a>
+    <a class="btn" href="class_style_ref.html"><b>下一页:</b> class,style,ref</a>
     
 </div>
 
@@ -770,6 +845,10 @@
     
 
     
+    <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+    
     <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
     
 
@@ -779,7 +858,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"函数式组件","level":"5.5.5","depth":2,"next":{"title":"服务器生存指南","level":"6.1","depth":1,"path":"ubuntu/serves/README.md","ref":"ubuntu/serves/README.md","articles":[{"title":"ftp 之路","level":"6.1.1","depth":2,"path":"ubuntu/serves/0_ftp.md","ref":"ubuntu/serves/0_ftp.md","articles":[]},{"title":"nginx 安装","level":"6.1.2","depth":2,"path":"ubuntu/serves/01_nginx/1_nginx.md","ref":"ubuntu/serves/01_nginx/1_nginx.md","articles":[{"title":"指令","level":"6.1.2.1","depth":3,"path":"ubuntu/serves/01_nginx/2_instruction.md","ref":"ubuntu/serves/01_nginx/2_instruction.md","articles":[]}]},{"title":"mysql 安装","level":"6.1.3","depth":2,"path":"ubuntu/serves/02_mysql/1_mysql.md","ref":"ubuntu/serves/02_mysql/1_mysql.md","articles":[{"title":"指令","level":"6.1.3.1","depth":3,"path":"ubuntu/serves/02_mysql/2_instruction.md","ref":"ubuntu/serves/02_mysql/2_instruction.md","articles":[]}]},{"title":"WordPress 之路","level":"6.1.4","depth":2,"path":"ubuntu/serves/03_WordPress.md","ref":"ubuntu/serves/03_WordPress.md","articles":[]},{"title":"GRUN 之路","level":"6.1.5","depth":2,"path":"ubuntu/serves/04_GRUN.md","ref":"ubuntu/serves/04_GRUN.md","articles":[]},{"title":"L2TP Client 之路","level":"6.1.6","depth":2,"path":"ubuntu/serves/05_L2TP_Client.md","ref":"ubuntu/serves/05_L2TP_Client.md","articles":[]},{"title":"docker之路","level":"6.1.7","depth":2,"path":"ubuntu/serves/06_docker.md","ref":"ubuntu/serves/06_docker.md","articles":[]},{"title":"mongodb之路","level":"6.1.8","depth":2,"path":"ubuntu/serves/07_mongodb.md","ref":"ubuntu/serves/07_mongodb.md","articles":[]}]},"previous":{"title":"v-model","level":"5.5.4","depth":2,"path":"vue/jsx/v-model.md","ref":"vue/jsx/v-model.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","styles-less","search-pro"],"root":"./docs/","styles":{"website":"./styles/website.css","ebook":"/styles/ebook.css","pdf":"/styles/pdf.css","mobi":"/styles/mobi.css","epub":"/styles/epub.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"styles-less":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"vue/jsx/函数式组件.md","mtime":"2018-09-29T02:18:14.898Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-09-29T02:44:09.792Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"函数式组件","level":"5.5.5","depth":2,"next":{"title":"class,style,ref","level":"5.5.6","depth":2,"path":"vue/jsx/class_style_ref.md","ref":"vue/jsx/class_style_ref.md","articles":[]},"previous":{"title":"v-model","level":"5.5.4","depth":2,"path":"vue/jsx/v-model.md","ref":"vue/jsx/v-model.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap","-search","styles-less","search-pro","livereload"],"root":"./docs/","styles":{"website":"./styles/website.css","ebook":"/styles/ebook.css","pdf":"/styles/pdf.css","mobi":"/styles/mobi.css","epub":"/styles/epub.css"},"pluginsConfig":{"sitemap":{"hostname":"https://blog.honghaitao.net/"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"styles-less":{},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.0.1"},"title":"代码收集","gitbook":"3.1.1"},"file":{"path":"vue/jsx/函数式组件.md","mtime":"2018-09-29T02:59:11.377Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-10-15T05:41:35.093Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 

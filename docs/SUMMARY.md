@@ -69,6 +69,9 @@
     * [v-for](vue/jsx/v-for.md)
     * [v-model](vue/jsx/v-model.md)
     * [函数式组件](vue/jsx/函数式组件.md)
+    * [class,style,ref](vue/jsx/class_style_ref.md)
+* [vue-cli](vue/vue-cli/README.md)
+    * [vue.config.js](vue/vue-cli/vue_config_js.md)
 
 -----
 * [服务器生存指南](ubuntu/serves/README.md)

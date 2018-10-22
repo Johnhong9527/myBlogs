@@ -1,5 +1,5 @@
 ## jsx
-参考文章:[在vue中使用jsx语法](https://juejin.im/post/5affa64df265da0b93488fdd#heading-0)
+`JSX`这部分内容是在参考文章:[在vue中使用jsx语法](https://juejin.im/post/5affa64df265da0b93488fdd#heading-0)中提炼出来的,就是跟着敲代码跑了一遍.基本就明白了
 
 #### 什么是JSX?
 ---

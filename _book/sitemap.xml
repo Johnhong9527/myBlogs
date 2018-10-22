@@ -60,6 +60,9 @@
 <url> <loc>https://blog.honghaitao.net/vue/jsx/v-for.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/vue/jsx/v-model.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/vue/jsx/函数式组件.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/vue/jsx/class_style_ref.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/vue/vue-cli/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.honghaitao.net/vue/vue-cli/vue_config_js.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/0_ftp.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://blog.honghaitao.net/ubuntu/serves/01_nginx/1_nginx.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
