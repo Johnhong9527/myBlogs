@@ -36,3 +36,7 @@ book.mobi
 
 # yarn
 yarn.lock
+
+docs/.vuepress/dist
+node_modules
+interview
