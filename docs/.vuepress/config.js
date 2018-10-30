@@ -2,6 +2,7 @@ module.exports = {
     title: '看白鹿的博客',
     description: '只有敢于尝试,才能品味人生.',
     base: '/',
+    dest:'dist',
     head: [
         // ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
         [
