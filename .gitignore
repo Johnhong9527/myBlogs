@@ -37,6 +37,6 @@ book.mobi
 # yarn
 yarn.lock
 
-dist
+# dist
 node_modules
 interview

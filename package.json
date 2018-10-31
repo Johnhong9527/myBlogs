@@ -1,35 +1,26 @@
 {
-  "name": "blogs",
-  "version": "1.0.0",
+  "name": "myBlogs",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "changelog": "cp package.json _package.json &&preset=`conventional-commits-detector` && echo $preset && bump=`conventional-recommended-bump -p angular` && echo ${1:-$bump} && npm --no-git-tag-version version ${1:-$bump} &>/dev/null && conventional-changelog -i CHANGELOG.md -s -p ${2:-$preset} && git add CHANGELOG.md package.json package-lock.json && version=`cat package.json` && git commit -m'docs(CHANGELOG): $version' && mv -f _package.json package.json && npm version ${1:-$bump} -m 'chore(release): %s' && git push --follow-tags ",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "gh-pages -d dist",
-    "deploy:build": "npm run docs:build && gh-pages -d dist"
+    "git:push": "git add . && git commit -m update && git push origin master",
+    "gh-pages": "git subtree push --prefix=dist origin gh-pages",
+    "push": "vuepress build docs && npm run git:push  && npm run gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnhong9527/myBlogs.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "cz-conventional-changelog": "^2.1.0",
-    "gh-pages": "^2.0.1",
-    "husky": "^1.1.2",
-    "validate-commit-msg": "^2.14.0"
+  "bugs": {
+    "url": "https://github.com/Johnhong9527/myBlogs/issues"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "validate-commit-msg"
-    }
-  }
+  "homepage": "https://github.com/Johnhong9527/myBlogs#readme"
 }

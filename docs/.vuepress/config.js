@@ -3,7 +3,7 @@ module.exports = {
   description: '只有敢于尝试,才能品味人生.',
   // base: '/myBlogs/',
 
-  dest: './dist',
+  dest: 'dist',
   head: [
     // ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
     [
