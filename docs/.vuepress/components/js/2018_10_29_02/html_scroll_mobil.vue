@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <h1 @click="os">OS:{{osStr}}</h1>
     <div id="btn-wrapper">
       <div>
@@ -23,7 +22,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -52,7 +50,6 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .article {
 }
