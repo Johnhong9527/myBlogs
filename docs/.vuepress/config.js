@@ -1,7 +1,7 @@
 module.exports = {
   title: '看白鹿的博客',
   description: '只有敢于尝试,才能品味人生.',
-  // base: '/myBlogs/',
+  base: '/myBlogs/',
 
   dest: 'dist',
   head: [
