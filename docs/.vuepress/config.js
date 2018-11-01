@@ -1,7 +1,7 @@
 module.exports = {
   title: '看白鹿的博客',
   description: '只有敢于尝试,才能品味人生.',
-  base: '/myBlogs/',
+  // base: '/myBlogs/',
 
   dest: 'dist',
   head: [
@@ -70,6 +70,10 @@ module.exports = {
             text: '待了解',
             link: '/About/WHY.md',
           },
+          {
+            text: '面试',
+            link: '/INTERVIEW/',
+          },
         ],
       },
       // 下拉列表
@@ -99,6 +103,7 @@ module.exports = {
       '/FLUTTER/': ['', '2018_10_25_01'],
       '/GIT/': ['', '2018_10_22_01', '2018_10_22_02', '2018_10_31_01'],
       '/IDE/': ['', '2018_10_28_01'],
+      '/INTERVIEW/': ['', 'BasicAjax', 'HTTP', 'Terminology'],
       '/JavaScript/': ['', 'one', '2018_10_29_02', '2018_10_28_01'],
       '/NODE/': ['', '01_nodejs_phantomjs_nodemailer', '2018_10_28_01'],
       '/UBUNTU/': ['', '2018_10_28_01', '2018_10_28_02', '2018_10_28_03'],
