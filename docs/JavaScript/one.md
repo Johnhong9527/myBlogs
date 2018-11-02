@@ -1,6 +1,6 @@
 # 实验
 用于vuepress的属性实验
-![An image](/constructor.png)
+![An image](/images/js/2018_11_02/constructor.png)
 
 <<< docs/.vuepress/components/js/2018_10_28_01/01.js{3}
 
