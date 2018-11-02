@@ -110,7 +110,7 @@ module.exports = {
       '/INTERVIEW/': ['', 'BasicAjax', 'HTTP', 'Terminology'],
       '/JavaScript/': [
         '',
-        'one',
+        // 'one',
         '2018_10_29_02',
         '2018_10_28_01',
         '2018_11_02_01',
