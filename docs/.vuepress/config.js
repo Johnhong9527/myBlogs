@@ -132,6 +132,10 @@ module.exports = {
         '2018_11_02_04',
       ],
     },
+    algolia: {
+      apiKey: 'f155116ae3f199b1d79b55adf623b6d8',
+      indexName: 'honghaitao',
+    },
   },
   configureWebpack: {
     resolve: {
