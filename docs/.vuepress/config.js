@@ -78,6 +78,10 @@ module.exports = {
             text: '面试',
             link: '/INTERVIEW/',
           },
+          {
+            text: '你好',
+            link: '/hello/',
+          },
         ],
       },
       // 下拉列表
