@@ -9,8 +9,8 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "git:push": "git add . && git commit -m update && proxychains4 git push origin master",
-    "gh-pages": "proxychains4 git subtree push --prefix=dist origin gh-pages",
+    "git:push": "git add . && git commit -m update && git push origin master",
+    "gh-pages": "git subtree push --prefix=dist origin gh-pages",
     "push": "vuepress build docs && npm run git:push  && npm run gh-pages"
   },
   "repository": {
@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/Johnhong9527/myBlogs/issues"
   },
-  "homepage": "https://github.com/Johnhong9527/myBlogs#readme"
+  "homepage": "https://github.com/Johnhong9527/myBlogs#readme",
+  "dependencies": {
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0"
+  }
 }
