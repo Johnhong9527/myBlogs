@@ -3,7 +3,7 @@
     <div class="bg-green"></div>
     <div class="bg-line"></div>
     <div class="container">
-      <div v-for="i in 20">
+      <div v-for="i in 16">
         <div class="bg"></div>
         <div class="row"></div>
         <div class="colums"></div>

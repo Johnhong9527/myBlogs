@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style lang="less">
+<style lang="less" scoped>
   @or: /;
   .container {
     &.one {
