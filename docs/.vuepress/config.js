@@ -2,7 +2,7 @@ module.exports = {
   title: '看白鹿的博客',
   description: '只有敢于尝试,才能品味人生.',
   // base: '/myBlogs/',
-  
+
   dest: 'dist',
   head: [
     // ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
@@ -10,9 +10,9 @@ module.exports = {
       'link',
       {
         rel: 'icon',
-        href: '/logo.png',
-      },
-    ], // 增加一个自定义的 favicon(网页标签的图标)
+        href: '/logo.png'
+      }
+    ] // 增加一个自定义的 favicon(网页标签的图标)
   ],
   themeConfig: {
     sidebarDepth: 3, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
@@ -25,69 +25,69 @@ module.exports = {
         items: [
           {
             text: 'CSS',
-            link: '/CSS/',
+            link: '/CSS/'
           },
           {
             text: 'flutter',
-            link: '/FLUTTER/',
+            link: '/FLUTTER/'
           },
           {
             text: 'GIT',
-            link: '/GIT/',
+            link: '/GIT/'
           },
-          
+
           {
             text: 'JavaScript',
-            link: '/JavaScript/',
+            link: '/JavaScript/'
           },
           {
             text: 'react',
-            link: '/REACT/',
+            link: '/REACT/'
           },
           {
             text: 'vue',
-            link: '/VUE/',
-          },
-        ],
+            link: '/VUE/'
+          }
+        ]
       },
       {
         text: '后台',
         items: [
           {
             text: 'node',
-            link: '/NODE/',
+            link: '/NODE/'
           },
           {
             text: 'ubuntu',
-            link: '/UBUNTU/',
-          },
-        ],
+            link: '/UBUNTU/'
+          }
+        ]
       }, // 外部链接
       {
         text: '其他',
         items: [
           {
             text: 'IDE',
-            link: '/IDE/',
+            link: '/IDE/'
           },
           {
             text: '待了解',
-            link: '/About/WHY.md',
+            link: '/About/WHY.md'
           },
           {
             text: '面试',
-            link: '/INTERVIEW/',
-          },
-          {
+            link: '/INTERVIEW/'
+          }
+          /*{
             text: '你好',
             link: '/hello/',
-          },
-        ],
+          },*/
+        ]
       },
       // 下拉列表
       {
         text: 'GitHub',
-        link: 'https://github.com/Johnhong9527',
+        link: 'https://github.com/Johnhong9527'
         // items: [
         //   { text: 'GitHub地址', link: 'https://github.com/Johnhong9527' },
         //   /* {
@@ -95,7 +95,7 @@ module.exports = {
         //     link: 'https://github.com/OBKoro1/Brush_algorithm'
         //   } */
         // ]
-      },
+      }
     ],
     sidebar: {
       '/CSS/': [
@@ -109,10 +109,10 @@ module.exports = {
         'principle',
         '2019_04_11_01'
       ],
-      '/FLUTTER/': [ '', '2018_10_25_01' ],
-      '/GIT/': [ '', '2018_10_22_01', '2018_10_22_02', '2018_10_31_01' ],
-      '/IDE/': [ '', '2018_10_28_01' ],
-      '/INTERVIEW/': [ '', 'BasicAjax', 'HTTP', 'Terminology' ],
+      '/FLUTTER/': ['', '2018_10_25_01'],
+      '/GIT/': ['', '2018_10_22_01', '2018_10_22_02', '2018_10_31_01'],
+      '/IDE/': ['', '2018_10_28_01'],
+      '/INTERVIEW/': ['', 'BasicAjax', 'HTTP', 'Terminology'],
       '/JavaScript/': [
         '',
         // '01',
@@ -123,10 +123,11 @@ module.exports = {
         '2018_11_02_03',
         '2018_11_02_04',
         '2018_11_02_05',
+        '2019_07_16_01'
       ],
-      '/NODE/': [ '', '01_nodejs_phantomjs_nodemailer', '2018_10_28_01' ],
-      '/REACT/': [ '', '2018_11_02_01' ],
-      '/UBUNTU/': [ '', '2018_10_28_01', '2018_10_28_02', '2018_10_28_03', '2019_01_11' ],
+      '/NODE/': ['', '01_nodejs_phantomjs_nodemailer', '2018_10_28_01'],
+      '/REACT/': ['', '2018_11_02_01'],
+      '/UBUNTU/': ['', '2018_10_28_01', '2018_10_28_02', '2018_10_28_03', '2019_01_11'],
       '/VUE/': [
         '',
         '2018_10_31_01',
@@ -134,32 +135,32 @@ module.exports = {
         '2018_11_02_01',
         '2018_11_02_02',
         '2018_11_02_03',
-        '2018_11_02_04',
-      ],
+        '2018_11_02_04'
+      ]
     },
     algolia: {
       apiKey: 'f155116ae3f199b1d79b55adf623b6d8',
-      indexName: 'honghaitao',
-    },
+      indexName: 'honghaitao'
+    }
   },
   configureWebpack: {
     resolve: {
       alias: {
         '@js': '/docs/.vuepress/components/js',
-        '@alias': 'path/to/some/dir',
-      },
-    },
+        '@alias': 'path/to/some/dir'
+      }
+    }
   },
   markdown: {
     module: {
       rules: [
         {
           test: /\.less$/,
-          loader: 'less-loader', // compiles Less to CSS
-        },
-      ],
+          loader: 'less-loader' // compiles Less to CSS
+        }
+      ]
     },
-    lineNumbers: true,
+    lineNumbers: true
     // markdown-it-anchor 的选项
     // anchor: { permalink: false },
     // markdown-it-toc 的选项
@@ -168,5 +169,5 @@ module.exports = {
     //   // 使用更多的 markdown-it 插件!
     //   md.use(require('markdown-it-xxx'))
     // }
-  },
+  }
 };
