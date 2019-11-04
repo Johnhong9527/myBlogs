@@ -1,3 +1,4 @@
+var URL = require('url');
 module.exports = {
     title: '看白鹿的博客',
     description: '只有敢于尝试,才能品味人生.',
@@ -27,7 +28,8 @@ module.exports = {
                     notify: false,
                     verify: false,
                     visitor: true,
-                    path: '<%- frontmatter.commentid || frontmatter.permalink %>',
+                    pageSize: 30,
+                    // path: window.location.pathname,
                     avatar: 'vBPlRNwUOJlHqfmoSAmXz5Qk',
                     placeholder: '欢迎留言与我分享您的想法...',
                 }
