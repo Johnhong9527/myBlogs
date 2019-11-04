@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d236ffbc-67bb-4c65-82ca-f815d4294894" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/AlgoliaSearchBox.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/Comments.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/DropdownLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/DropdownTransition.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/NavLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/NavLinks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/Navbar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/Page.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/PageEdit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/PageNav.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/Sidebar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/SidebarButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/SidebarGroup.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/SidebarLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/SidebarLinks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/global-components/Badge.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/layouts/404.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/layouts/Layout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/noopModule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/styles/arrow.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/styles/code.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/styles/config.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/styles/custom-blocks.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/styles/index.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/styles/mobile.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/styles/toc.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/styles/wrapper.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/theme/util/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CSS/2018_10_21_01.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/CSS/2018_10_21_01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CSS/2018_10_21_02.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/CSS/2018_10_21_02.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CSS/2018_10_21_03.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/CSS/2018_10_21_03.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CSS/2019_04_11_01.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/CSS/2019_04_11_01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CSS/grid/grid.less" beforeDir="false" afterPath="$PROJECT_DIR$/docs/CSS/grid/grid.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="d236ffbc-67bb-4c65-82ca-f815d4294894" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +102,7 @@
       <workItem from="1554880949357" duration="11044000" />
       <workItem from="1556507652707" duration="12114000" />
       <workItem from="1572744478784" duration="11479000" />
-      <workItem from="1572837738451" duration="4186000" />
+      <workItem from="1572837738451" duration="4330000" />
     </task>
     <servers />
   </component>

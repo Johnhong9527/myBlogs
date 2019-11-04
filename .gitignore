@@ -40,3 +40,5 @@ yarn.lock
 # dist
 node_modules
 interview
+
+.idea
