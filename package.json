@@ -12,7 +12,7 @@
     "build": "vuepress build docs",
     "docs:build": "vuepress build docs",
     "git:push": "git add . && git commit -m update && git push origin master",
-    "gh-pages": "git subtree push -f --prefix=dist origin gh-pages",
+    "gh-pages": "git subtree push --prefix=dist origin gh-pages",
     "push": "vuepress build docs && npm run git:push  && npm run gh-pages"
   },
   "repository": {
