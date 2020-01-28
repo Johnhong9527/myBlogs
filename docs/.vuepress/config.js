@@ -97,6 +97,10 @@ module.exports = {
             link: '/IDE/',
           },
           {
+            text: 'MACBOOK PRO',
+            link: '/mac/',
+          },
+          {
             text: '待了解',
             link: '/About/WHY.md',
           },
@@ -170,6 +174,7 @@ module.exports = {
         '2018_11_02_04',
       ],
       '/ffmpeg/': ['', '2020_01_26'],
+      '/mac/': ['', '2020_01_28'],
     },
     algolia: {
       apiKey: 'f155116ae3f199b1d79b55adf623b6d8',
